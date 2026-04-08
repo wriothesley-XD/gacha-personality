@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacha Personality ✦</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =============================================
+         ATTRACT SCREEN (Layar Idle Pameran)
+         Muncul otomatis setelah 30 detik tidak ada aktivitas
+         Klik mana saja untuk mulai
+         ============================================= -->
+    <div id="attractScreen" class="attract-screen hidden">
+        <div class="attract-particles" id="attractParticles"></div>
+        <div class="attract-content">
+            <div class="attract-logo">✦</div>
+            <h1 class="attract-title">Gacha Personality</h1>
+            <p class="attract-sub">Temukan karakter yang cocok dengan kepribadianmu!</p>
+            <div class="attract-chars" id="attractChars"></div>
+            <div class="attract-cta">
+                <div class="attract-cta-pulse"></div>
+                <span>Sentuh untuk Mulai</span>
+            </div>
+            <div class="attract-hint">✦ Tersedia {{ N }} karakter ✦</div>
+        </div>
+    </div>
+
+    <!-- PARTIKEL -->
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <!-- HALAMAN AWAL -->
+    <div class="container fadeIn" id="home" role="main">
+        <div class="hero-section">
+            <h1 class="main-title">✦ Gacha Personality</h1>
+            <p class="subtitle">Temukan karakter yang cocok dengan kepribadianmu</p>
+        </div>
+
+        <div class="input-section">
+            <label for="username" class="sr-only">Nama kamu</label>
+            <input type="text" id="username" placeholder="✦ Masukkan nama kamu..." aria-label="Masukkan nama kamu" autocomplete="off" />
+            <div id="message"></div>
+        </div>
+
+        <div class="primary-actions">
+            <button onclick="startQuiz('personality')" class="action-btn personality-btn" aria-label="Mulai gacha kepribadian untuk menemukan karakter mirip">
+                <span class="btn-icon">🔍</span>
+                <span class="btn-text">Kamu Mirip Siapa?</span>
+            </button>
+            <button onclick="startQuiz('compatibility')" class="action-btn compatibility-btn" aria-label="Mulai gacha kompatibilitas untuk menemukan pasangan">
+                <span class="btn-icon">💕</span>
+                <span class="btn-text">Pasangan Mu?</span>
+            </button>
+            <button onclick="startRandomGacha('random')" class="action-btn random-btn" aria-label="Mulai gacha acak tanpa kuis">
+                <span class="btn-icon">🎲</span>
+                <span class="btn-text">Gacha Acak</span>
+            </button>
+        </div>
+
+        <div class="secondary-actions">
+            <button onclick="openBrowse()" class="secondary-btn" aria-label="Buka panel jelajahi karakter">
+                <span class="btn-icon">📚</span>
+                <span class="btn-text">Jelajahi Karakter</span>
+            </button>
+            <button onclick="openTutorial()" class="secondary-btn" aria-label="Buka panduan tutorial">
+                <span class="btn-icon">❓</span>
+                <span class="btn-text">Bantuan</span>
+            </button>
+            <button id="adminBtn" class="secondary-btn" onclick="openAdmin()" aria-label="Buka panel admin untuk mengelola karakter">
+                <span class="btn-icon">⚙️</span>
+                <span class="btn-text">Kelola Karakter</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- PANEL BROWSE KARAKTER -->
+    <div id="browsePanel" class="container hidden fadeIn" role="main">
+        <div class="filter-section">
+            <h3>✦ Jelajahi Karakter</h3>
+            <div class="filter-controls">
+                <input type="text" id="searchName" placeholder="🔍 Cari nama karakter..." oninput="debouncedDisplayBrowse()" aria-label="Cari nama karakter" />
+                <select id="filterGender" onchange="debouncedDisplayBrowse()" aria-label="Filter berdasarkan gender">
+                    <option value="">Semua Gender</option>
+                    <option value="male">Laki-laki ♂</option>
+                    <option value="female">Perempuan ♀</option>
+                    <option value="anomali">Anomali ⚠</option>
+                </select>
+                <select id="filterTrait" onchange="debouncedDisplayBrowse()" aria-label="Filter berdasarkan trait">
+                    <option value="">Semua Trait</option>
+                    <option value="brave">⚔️ Brave</option>
+                    <option value="smart">🧠 Smart</option>
+                    <option value="gentle">🌸 Gentle</option>
+                    <option value="leader">👑 Leader</option>
+                    <option value="warm">🔥 Warm</option>
+                    <option value="cautious">🛡️ Cautious</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="browseCharacterList" class="character-list" role="list" aria-label="Daftar karakter"></div>
+
+        <div id="pagination" class="pagination"></div>
+
+        <button onclick="closeBrowse()" class="back-btn" aria-label="Kembali ke halaman utama">← Kembali</button>
+    </div>
+
+    <!-- HALAMAN QUIZ -->
+    <div id="quiz" class="container hidden fadeIn" role="main">
+        <h1>✦ Pertanyaan Kepribadian</h1>
+        <div id="quizContent" role="region" aria-label="Pertanyaan kuis kepribadian"></div>
+    </div>
+
+    <!-- PANEL ADMIN KELOLA KARAKTER -->
+    <div id="adminPanel" class="container hidden fadeIn">
+        <h1>⚙️ Kelola Karakter</h1>
+        <div class="admin-nav">
+            <button id="navCharacters" class="nav-btn active" onclick="switchAdminTab('characters')">👤 Karakter</button>
+            <button id="navMappings" class="nav-btn" onclick="switchAdminTab('mappings')">🔗 Mapping</button>
+            <button id="navStats" class="nav-btn" onclick="switchAdminTab('stats')">📊 Statistik</button>
+            <button id="navImport" class="nav-btn" onclick="switchAdminTab('import')">📁 Import/Export</button>
+            <button id="navBackground" class="nav-btn" onclick="switchAdminTab('background')">🖼️ Background</button>
+        </div>
+        <div id="adminMessage" class="admin-message"></div>
+        <div class="admin-content">
+            <div class="form-section" id="adminForm"></div>
+            <div class="list-section" id="adminList"></div>
+        </div>
+        <button onclick="closeAdmin()" class="back-btn">← Kembali</button>
+    </div>
+
+    <!-- ANIMASI GACHA -->
+    <div id="gachaAnim" class="hidden gacha-box">
+        <div class="spinner"></div>
+        <p id="gachaText">Sedang mencari karakter terbaik...</p>
+        <div class="gacha-progress">
+            <div class="progress-bar"></div>
+        </div>
+        <p class="gacha-tip">✦ Jangan refresh halaman ya!</p>
+    </div>
+
+    <!-- HASIL KARAKTER -->
+    <div id="result" class="result hidden fadeIn"></div>
+
+    <!-- PESAN ERROR UNTUK ANOMALI -->
+    <div id="errorMessage">⚠ Error: Sistem tidak dapat memproses karakter ini</div>
+
+    <!-- MODAL TUTORIAL -->
+    <div id="tutorialModal" class="modal hidden" role="dialog" aria-labelledby="tutorialTitle" aria-modal="true">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeTutorial()" aria-label="Tutup tutorial">&times;</span>
+            <h2 id="tutorialTitle">✦ Panduan Gacha Personality</h2>
+            <div class="tutorial-content">
+                <div class="tutorial-step">
+                    <h3>🎯 Pilih Mode Gacha</h3>
+                    <p>
+                        <strong>🔍 Kamu Mirip Siapa?</strong> — Temukan karakter yang mirip dengan kepribadianmu<br>
+                        <strong>💕 Pasangan Mu?</strong> — Temukan karakter yang cocok sebagai pasangan<br>
+                        <strong>🎲 Gacha Acak</strong> — Langsung dapat karakter tanpa kuis
+                    </p>
+                </div>
+                <div class="tutorial-step">
+                    <h3>❓ Jawab Pertanyaan</h3>
+                    <p>Jawab pertanyaan kepribadian dengan jujur untuk hasil terbaik. Setiap jawaban memengaruhi hasil gacha!</p>
+                </div>
+                <div class="tutorial-step">
+                    <h3>🎲 Proses Gacha</h3>
+                    <p>Nikmati animasi gacha yang menarik sambil sistem menganalisis kepribadianmu.</p>
+                </div>
+                <div class="tutorial-step">
+                    <h3>📚 Jelajahi Karakter</h3>
+                    <p>Gunakan fitur <strong>Jelajahi Karakter</strong> untuk melihat semua karakter dengan filter pencarian.</p>
+                </div>
+                <div class="tutorial-step">
+                    <h3>⚙️ Kelola Karakter (Admin)</h3>
+                    <p>Gunakan tombol <strong>Kelola Karakter</strong> untuk menambah, edit, atau hapus karakter.</p>
+                </div>
+                <div class="tutorial-step">
+                    <h3>💡 Tips</h3>
+                    <p>Jawab dengan jujur untuk hasil yang paling akurat. Kamu bisa coba lagi kapan saja!</p>
+                </div>
+            </div>
+            <button onclick="closeTutorial()" class="tutorial-close-btn" aria-label="Tutup tutorial dan mulai">✦ Ayo Mulai!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
