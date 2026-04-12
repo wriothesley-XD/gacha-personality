@@ -288,14 +288,42 @@ function displayBrowseCharacters(page) {
         prev.onclick = () => displayBrowseCharacters(browseCurrentPage - 1);
         paginationEl.appendChild(prev);
 
-        for (let i = 1; i <= totalPages; i++) {
-            const btn = document.createElement('button');
-            btn.textContent = i;
-            btn.className = (i === browseCurrentPage) ? 'active' : '';
-            btn.onclick = () => displayBrowseCharacters(i);
-            paginationEl.appendChild(btn);
-        }
+        // Selalu tampil halaman 1
+if (browseCurrentPage > 3) {
+    const btn = document.createElement('button');
+    btn.textContent = '1';
+    btn.onclick = () => displayBrowseCharacters(1);
+    paginationEl.appendChild(btn);
+    if (browseCurrentPage > 4) {
+        const dots = document.createElement('span');
+        dots.textContent = '...';
+        dots.style.padding = '0 6px';
+        paginationEl.appendChild(dots);
+    }
+}
 
+// Tampil 2 halaman sebelum dan sesudah halaman aktif
+for (let i = Math.max(1, browseCurrentPage - 2); i <= Math.min(totalPages, browseCurrentPage + 2); i++) {
+    const btn = document.createElement('button');
+    btn.textContent = i;
+    btn.className = (i === browseCurrentPage) ? 'active' : '';
+    btn.onclick = () => displayBrowseCharacters(i);
+    paginationEl.appendChild(btn);
+}
+
+// Selalu tampil halaman terakhir
+if (browseCurrentPage < totalPages - 2) {
+    if (browseCurrentPage < totalPages - 3) {
+        const dots = document.createElement('span');
+        dots.textContent = '...';
+        dots.style.padding = '0 6px';
+        paginationEl.appendChild(dots);
+    }
+    const btn = document.createElement('button');
+    btn.textContent = totalPages;
+    btn.onclick = () => displayBrowseCharacters(totalPages);
+    paginationEl.appendChild(btn);
+}
         const next = document.createElement('button');
         next.textContent = '›';
         next.disabled = browseCurrentPage >= totalPages;
@@ -303,7 +331,29 @@ function displayBrowseCharacters(page) {
         paginationEl.appendChild(next);
     }
 }
-
+function filterEditSelect() {
+    const keyword = (document.getElementById('editSearchInput')?.value || '').toLowerCase();
+    const select = document.getElementById('editCharSelect');
+    if (!select) return;
+    select.innerHTML = '';
+    if (!keyword) {
+        select.innerHTML = '<option value="">Ketik nama di atas untuk mencari...</option>';
+        return;
+    }
+    const filtered = characters.filter(c =>
+        c.name.toLowerCase().includes(keyword)
+    ).slice(0, 20);
+    if (filtered.length === 0) {
+        select.innerHTML = '<option value="">Tidak ditemukan...</option>';
+        return;
+    }
+    filtered.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c.name;
+        opt.textContent = c.name;
+        select.appendChild(opt);
+    });
+}
 function filterCharacters() {
     // reuse displayBrowseCharacters with page reset
     displayBrowseCharacters(1);
@@ -561,34 +611,38 @@ function startGachaAnimation() {
     // Inject animasi gacha baru yang keren ke dalam gachaAnim
     const gachaBox = document.getElementById("gachaAnim");
     gachaBox.innerHTML = `
-        <div class="gacha-orb-wrapper">
-            <div class="gacha-orb">
-                <div class="gacha-orb-inner">
-                    <div class="gacha-orb-ring ring1"></div>
-                    <div class="gacha-orb-ring ring2"></div>
-                    <div class="gacha-orb-ring ring3"></div>
-                    <div class="gacha-orb-core">✦</div>
-                </div>
+    <div class="card-flip-wrapper">
+        <div class="card-flip" id="cardFlip">
+            <div class="card-front">
+                <div class="card-front-pattern">✦</div>
+                <div class="card-front-text">?</div>
             </div>
-            <div class="gacha-sparks" id="gachaSparks"></div>
+            <div class="card-back" id="cardBack">
+    <div class="card-back-shine"></div>
+    <div class="card-back-text">?</div>
+    <div id="cardCharImg" style="display:none;width:100%;height:100%;position:absolute;inset:0;border-radius:14px;overflow:hidden;z-index:10;">
+        <img id="cardCharImgEl" style="width:100%;height:100%;object-fit:cover;" src="" alt="">
+    </div>
+</div>
         </div>
-        <p class="gacha-loading-title" id="gachaText">Memutar gacha...</p>
-        <div class="gacha-steps">
-            <div class="gacha-step active" id="step1">🔍 Membaca kepribadian</div>
-            <div class="gacha-step" id="step2">⚡ Mencocokkan karakter</div>
-            <div class="gacha-step" id="step3">✨ Siap ditampilkan!</div>
-        </div>
-        <div class="gacha-progress-track"><div class="gacha-progress-fill-anim" id="gachaProgressFill"></div></div>
-    `;
+    </div>
+    <p class="gacha-loading-title" id="gachaText">Memutar gacha...</p>
+    <div class="gacha-steps">
+        <div class="gacha-step active" id="step1">🔍 Membaca kepribadian</div>
+        <div class="gacha-step" id="step2">⚡ Mencocokkan karakter</div>
+        <div class="gacha-step" id="step3">✨ Siap ditampilkan!</div>
+    </div>
+    <div class="gacha-progress-track"><div class="gacha-progress-fill-anim" id="gachaProgressFill"></div></div>
+`;
+gachaBox.classList.remove("hidden");
+gachaBox.style.display = "flex";
     gachaBox.classList.remove("hidden");
+    gachaBox.style.display = "flex"; 
 
     // Munculkan spark partikel kecil
     const sparksEl = document.getElementById('gachaSparks');
     for (let i = 0; i < 12; i++) {
-        const sp = document.createElement('div');
-        sp.className = 'spark';
-        sp.style.cssText = `--angle:${i * 30}deg; --delay:${(i * 0.08).toFixed(2)}s`;
-        sparksEl.appendChild(sp);
+        
     }
 
     // Animasi step-step loading
@@ -612,9 +666,26 @@ function startGachaAnimation() {
     }, 120);
 
     setTimeout(() => {
-        clearInterval(stepInterval);
-        rollCharacter(username);
-    }, 2200);
+    clearInterval(stepInterval);
+    
+    let resultObj = findBestCharacter();
+    let char = resultObj.character;
+    
+    const cardImg = document.getElementById('cardCharImg');
+    const cardImgEl = document.getElementById('cardCharImgEl');
+    const cardFlip = document.getElementById('cardFlip');
+    
+    if (cardImgEl && char) {
+        cardImgEl.src = char.img;
+        cardImg.style.display = 'block';
+    }
+    if (cardFlip) {
+        cardFlip.classList.add('stopped');
+    }
+    
+    rollCharacter(username);
+    
+}, 3000);
 }
 
 // rollCharacter - moved to top-level
@@ -624,6 +695,11 @@ function rollCharacter(username) {
 
     let resultObj = findBestCharacter();
     let char = resultObj.character;
+    // Catat statistik gacha
+const statsRaw = localStorage.getItem('gachaStats');
+const gachaStats = statsRaw ? JSON.parse(statsRaw) : {};
+gachaStats[char.name] = (gachaStats[char.name] || 0) + 1;
+localStorage.setItem('gachaStats', JSON.stringify(gachaStats));
 
     // === FIX #3: Background Dinamis (tidak butuh file gambar) ===
     // male → biru langit | female → pink muda | anomali → gelap
@@ -989,6 +1065,7 @@ const nameMapping = {};
 
 // Built-in fallback characters from Honkai Star Rail
 const builtInCharacters = [
+
     {
         name: "Seele",
         gender: "female",
@@ -2936,59 +3013,55 @@ const builtInCharacters = [
     { name: "Anime-Dokja", gender: "male", img: "images/anime_dokja.png", desc: "Pembaca pembunuh dengan pengetahuan mendalam.", details: "Kim Dokja adalah pembaca dengan pengetahuan mendalam tentang cerita dunia. Dia menggunakan pengetahuannya untuk mengubah nasib dan menyelamatkan orang-orang.", words: "Cerita adalah alat terkuat untuk mengubah dunia.", sound: "sounds/anime_dokja.mp3", traits: { brave: 3, smart: 3, gentle: 2, leader: 3, warm: 2, cautious: 1 } }
 ];
 
-// ============ QUIZ QUESTIONS ARRAY ============
-const quizQuestions = [{
+const quizQuestions = [
+    {
         question: "Ketika ada masalah besar, kamu cenderung...",
         answers: [
             { text: "Menghadapinya dengan berani", traits: { brave: 2 } },
             { text: "Berpikir strategis dulu", traits: { smart: 2 } },
             { text: "Mencari bantuan teman", traits: { warm: 2 } },
-            { text: "Menunggu dan melihat situasi", traits: { cautious: 2 } }
+            { text: "Menunggu dan melihat situasi", traits: { cautious: 2 } },
+            { text: "Memimpin dan ambil kendali", traits: { leader: 2 } }
         ]
     },
     {
         question: "Dalam kelompok, peran kamu biasanya...",
         answers: [
-            { text: "Pemimpin yang mengambil inisiatif", traits: { leader: 2 } },
-            { text: "Anggota yang setia dan mendukung", traits: { warm: 2 } },
+            { text: "Pemimpin yang inisiatif", traits: { leader: 2 } },
+            { text: "Anggota setia pendukung", traits: { warm: 2 } },
             { text: "Pemikir yang analitis", traits: { smart: 2 } },
-            { text: "Pendengki tugas", traits: { cautious: 2 } }
+            { text: "Penjaga yang berhati-hati", traits: { cautious: 2 } },
+            { text: "Pemberani garis depan", traits: { brave: 2 } }
         ]
     },
     {
-        question: "Ketika berhadapan dengan ketidakadilan, reaksi pertamamu...",
+        question: "Ketika berhadapan dengan ketidakadilan...",
         answers: [
-            { text: "Langsung melawan dengan keras", traits: { brave: 2 } },
-            { text: "Mencari solusi yang bijaksana", traits: { smart: 2 } },
+            { text: "Langsung melawan keras", traits: { brave: 2 } },
+            { text: "Cari solusi bijaksana", traits: { smart: 2 } },
             { text: "Merasa sangat tersentuh", traits: { gentle: 2 } },
-            { text: "Menunggu waktu yang tepat", traits: { cautious: 2 } }
+            { text: "Tunggu waktu yang tepat", traits: { cautious: 2 } },
+            { text: "Gerakkan orang lain", traits: { leader: 2 } }
         ]
     },
     {
         question: "Bagaimana kamu mengatasi stres?",
         answers: [
-            { text: "Menghadapinya secara langsung", traits: { brave: 2 } },
-            { text: "Mencari carayang logis", traits: { smart: 2 } },
-            { text: "Menghabiskan waktu dengan orang terkasih", traits: { warm: 2 } },
-            { text: "Berdiam diri dan merenung", traits: { cautious: 2 } }
+            { text: "Hadapi secara langsung", traits: { brave: 2 } },
+            { text: "Cari cara yang logis", traits: { smart: 2 } },
+            { text: "Bersama orang terkasih", traits: { warm: 2 } },
+            { text: "Berdiam diri merenung", traits: { cautious: 2 } },
+            { text: "Lakukan sesuatu produktif", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Dalam situasi darurat, kamu cenderung...",
+        question: "Dalam situasi darurat, kamu...",
         answers: [
-            { text: "Mengambil tanggung jawab dan memimpin", traits: { leader: 2 } },
-            { text: "Berpikir dengan jernih tentang solusi", traits: { smart: 2 } },
-            { text: "Mendukung yang lain dengan empati", traits: { gentle: 2 } },
-            { text: "Berhati-hati dan mengikuti arahan", traits: { cautious: 2 } }
-        ]
-    },
-    {
-        question: "Hubungan dengan orang lain yang penting bagi kamu...",
-        answers: [
-            { text: "Melindungi dan membela mereka", traits: { brave: 2 } },
-            { text: "Memberikan nasihat dan bimbingan", traits: { smart: 2 } },
-            { text: "Memberikan perhatian dan kasih sayang", traits: { warm: 2 } },
-            { text: "Menghormati privasi mereka", traits: { cautious: 2 } }
+            { text: "Ambil tanggung jawab", traits: { leader: 2 } },
+            { text: "Berpikir jernih dan cepat", traits: { smart: 2 } },
+            { text: "Dukung orang lain", traits: { gentle: 2 } },
+            { text: "Ikuti arahan dengan hati-hati", traits: { cautious: 2 } },
+            { text: "Terjun langsung tanpa pikir", traits: { brave: 2 } }
         ]
     },
     {
@@ -2996,29 +3069,105 @@ const quizQuestions = [{
         answers: [
             { text: "Keberanian dan tantangan", traits: { brave: 2 } },
             { text: "Pengetahuan dan pemahaman", traits: { smart: 2 } },
-            { text: "Cinta dan hubungan yang hangat", traits: { warm: 2 } },
-            { text: "Kedamaian dan keamanan", traits: { cautious: 2 } }
+            { text: "Cinta dan kehangatan", traits: { warm: 2 } },
+            { text: "Kedamaian dan keamanan", traits: { cautious: 2 } },
+            { text: "Pengaruh dan kepemimpinan", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Ketika dimandatkan tanggung jawab besar, perasaanmu...",
+        question: "Teman-teman menggambarkanmu sebagai...",
         answers: [
-            { text: "Siap dan bersemangat mengambilnya", traits: { brave: 2 } },
-            { text: "Memikirkan setiap detail dengan matang", traits: { smart: 2 } },
-            { text: "Khawatir tapi tetap berusaha", traits: { gentle: 2 } },
-            { text: "Merasa berat dan meminta bantuan", traits: { cautious: 2 } }
+            { text: "Pemberani dan nekat", traits: { brave: 2 } },
+            { text: "Cerdas dan analitis", traits: { smart: 2 } },
+            { text: "Lembut dan perhatian", traits: { gentle: 2 } },
+            { text: "Hangat dan ramah", traits: { warm: 2 } },
+            { text: "Tegas dan berwibawa", traits: { leader: 2 } }
+        ]
+    },
+    {
+        question: "Saat menghadapi keputusan sulit...",
+        answers: [
+            { text: "Ikuti insting saja", traits: { brave: 2 } },
+            { text: "Analisa semua opsi", traits: { smart: 2 } },
+            { text: "Tanya pendapat orang lain", traits: { gentle: 2 } },
+            { text: "Pertimbangkan risikonya", traits: { cautious: 2 } },
+            { text: "Putuskan dengan tegas", traits: { leader: 2 } }
         ]
     },
     {
         question: "Gaya hidupmu yang ideal adalah...",
         answers: [
-            { text: "Petualangan dan aksi penuh", traits: { brave: 2 } },
-            { text: "Rutinitas terstruktur dan terukur", traits: { smart: 2 } },
-            { text: "Adem ayem dan menyenangkan", traits: { warm: 2 } },
-            { text: "Tenang dan terhindar dari konflik", traits: { cautious: 2 } }
+            { text: "Penuh petualangan dan aksi", traits: { brave: 2 } },
+            { text: "Terstruktur dan terukur", traits: { smart: 2 } },
+            { text: "Tenang dan menyenangkan", traits: { warm: 2 } },
+            { text: "Aman dan terhindar konflik", traits: { cautious: 2 } },
+            { text: "Memimpin dan berpengaruh", traits: { leader: 2 } }
+        ]
+    },
+    {
+        question: "Kamu lebih suka...",
+        answers: [
+            { text: "Olahraga ekstrem", traits: { brave: 2 } },
+            { text: "Membaca dan belajar", traits: { smart: 2 } },
+            { text: "Merawat orang lain", traits: { gentle: 2 } },
+            { text: "Berkumpul bersama teman", traits: { warm: 2 } },
+            { text: "Memimpin sebuah proyek", traits: { leader: 2 } }
+        ]
+    },
+    {
+        question: "Ketika bertemu orang baru...",
+        answers: [
+            { text: "Langsung akrab dan berani", traits: { brave: 2 } },
+            { text: "Amati dulu sebelum bicara", traits: { smart: 2 } },
+            { text: "Dengarkan mereka baik-baik", traits: { gentle: 2 } },
+            { text: "Ramah dan hangat", traits: { warm: 2 } },
+            { text: "Ambil inisiatif kenalan", traits: { leader: 2 } }
+        ]
+    },
+    {
+        question: "Kekuatan terbesar kamu adalah...",
+        answers: [
+            { text: "Keberanian tanpa batas", traits: { brave: 2 } },
+            { text: "Kecerdasan dan logika", traits: { smart: 2 } },
+            { text: "Empati yang dalam", traits: { gentle: 2 } },
+            { text: "Kehati-hatian dan ketelitian", traits: { cautious: 2 } },
+            { text: "Kemampuan memimpin", traits: { leader: 2 } }
+        ]
+    },
+    {
+        question: "Saat timmu gagal, kamu...",
+        answers: [
+            { text: "Bangkit dan coba lagi", traits: { brave: 2 } },
+            { text: "Analisa apa yang salah", traits: { smart: 2 } },
+            { text: "Hibur anggota tim", traits: { gentle: 2 } },
+            { text: "Evaluasi dan berhati-hati", traits: { cautious: 2 } },
+            { text: "Motivasi tim untuk maju", traits: { leader: 2 } }
+        ]
+    },
+    {
+        question: "Menurutmu, pahlawan sejati adalah...",
+        answers: [
+            { text: "Yang berani tanpa takut", traits: { brave: 2 } },
+            { text: "Yang paling cerdas", traits: { smart: 2 } },
+            { text: "Yang paling penyayang", traits: { gentle: 2 } },
+            { text: "Yang bijaksana dan hati-hati", traits: { cautious: 2 } },
+            { text: "Yang memimpin dengan baik", traits: { leader: 2 } }
+        ]
+    },
+    {
+        question: "Apa motivasi terbesarmu?",
+        answers: [
+            { text: "Membuktikan diri", traits: { brave: 2 } },
+            { text: "Mencari kebenaran", traits: { smart: 2 } },
+            { text: "Menjaga orang tersayang", traits: { gentle: 2 } },
+            { text: "Menciptakan kedamaian", traits: { cautious: 2 } },
+            { text: "Membuat perubahan besar", traits: { leader: 2 } }
         ]
     }
 ];
+
+// ============ QUIZ QUESTIONS ARRAY ============
+
 
 // ============ ADMIN FUNCTIONS & UI MANAGEMENT ============
 
@@ -3028,7 +3177,6 @@ function openAdmin() {
     switchAdminTab('add');
     refreshCharacterList();
     populateCharacterSelect();
-    refreshNameMappingList();
 }
 
 function closeAdmin() {
@@ -3040,6 +3188,24 @@ function closeAdmin() {
 
 function addCharacter() {
     const name = document.getElementById("charName").value.trim();
+    // Update preview real-time
+function updateCharPreview() {
+    const box = document.getElementById('charPreviewBox');
+    if (!box) return;
+    const name = document.getElementById('charName')?.value || '';
+    const desc = document.getElementById('charDesc')?.value || '';
+    const img = pendingImgBase64 || document.getElementById('charImgFallback')?.value || '';
+    const gender = document.getElementById('charGender')?.value || '';
+    const genderIcon = gender === 'male' ? '♂' : gender === 'anomali' ? '⚠' : '♀';
+    const genderColor = gender === 'male' ? '#2563eb' : gender === 'anomali' ? '#d97706' : '#db2777';
+
+    box.innerHTML = `
+        ${img ? `<img src="${img}" style="width:100px;height:100px;object-fit:cover;border-radius:50%;border:3px solid var(--blue);margin-bottom:12px;">` : '<div style="width:100px;height:100px;border-radius:50%;background:var(--border);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:2em;">👤</div>'}
+        <div style="font-family:Cinzel,serif;font-size:1.1em;font-weight:900;color:var(--text-primary);">${name || 'Nama Karakter'}</div>
+        <div style="color:${genderColor};font-size:0.85em;font-weight:700;margin:4px 0;">${genderIcon} ${gender || '-'}</div>
+        <div style="color:var(--text-muted);font-size:0.85em;margin-top:8px;">${desc || 'Deskripsi singkat...'}</div>
+    `;
+}
     if (!name) {
         alert("Isi nama karakter!");
         return;
@@ -3341,7 +3507,32 @@ let editingCharName = null;
 
 function refreshCharacterList() {
     const list = document.getElementById("characterList");
+    if (!list) return;
     list.innerHTML = "";
+    
+    const stored = localStorage.getItem("customCharacters");
+    const customChars = stored ? JSON.parse(stored) : [];
+    
+    // Hanya tampilkan 30 karakter pertama di admin
+    const limitedChars = characters.slice(0, 30);
+    
+    limitedChars.forEach(char => {
+        const isCustom = customChars.some(c => c.name === char.name);
+        const div = document.createElement('div');
+        div.className = 'char-item';
+        div.innerHTML = `
+            <div class="info">
+                <div class="name">${char.name}</div>
+                <div class="gender">${char.gender}</div>
+            </div>
+            <div class="char-actions">
+                <button onclick="editCharacter('${char.name}')">Edit</button>
+                <button onclick="deleteCharacter('${char.name}')">Hapus</button>
+            </div>
+        `;
+        list.appendChild(div);
+    });
+}
     const stored = localStorage.getItem("customCharacters");
     const customChars = stored ? JSON.parse(stored) : [];
 
@@ -3366,7 +3557,7 @@ function refreshCharacterList() {
             </div>
     `;
     });
-}
+
 
 function editCharacter(name) {
     const char = characters.find(c => c.name === name);
@@ -3483,8 +3674,8 @@ function switchAdminTab(tab) {
         form.innerHTML = `
             <h3>➕ Tambah Karakter Baru</h3>
             <div class="form-section-inner">
-                <input id="charName" placeholder="✦ Nama karakter">
-                <select id="charGender">
+                <input id="charName" placeholder="✦ Nama karakter" oninput="updateCharPreview()">
+                <select id="charGender" onchange="updateCharPreview()">
                     <option value="">Pilih gender</option>
                     <option value="male">♂ Laki-laki</option>
                     <option value="female">♀ Perempuan</option>
@@ -3514,7 +3705,7 @@ function switchAdminTab(tab) {
                     <input id="charSoundFallback" class="path-fallback" placeholder="Atau path lama: sounds/nama.mp3">
                 </div>
 
-                <input id="charDesc" placeholder="Deskripsi singkat karakter">
+                <input id="charDesc" placeholder="Deskripsi singkat karakter" oninput="updateCharPreview()">
                 <textarea id="charDetails" placeholder="Deskripsi lengkap karakter..."></textarea>
                 <input id="charWords" placeholder="Kata-kata khas karakter">
                 <div class="traits-form">
@@ -3533,52 +3724,50 @@ function switchAdminTab(tab) {
         `;
 
         // render list karakter
-        list.innerHTML = '<h3>Daftar Karakter</h3><div id="characterList"></div>';
-        refreshCharacterList();
-    } else if (tab === 'edit') {
-        form.innerHTML = `
-            <h3>✏️ Edit Karakter</h3>
-            <div class="form-section-inner">
-                <select id="editCharSelect" onchange="loadCharacterForEdit()" style="margin-bottom:15px;">
-                    <option value="">Pilih karakter untuk diedit...</option>
+        list.innerHTML = `
+    <div style="padding:20px;">
+        <h3 style="font-family:'Cinzel',serif;color:var(--blue);margin-bottom:16px;">👁️ Preview</h3>
+        <div id="charPreviewBox" style="background:var(--bg-section);border:1.5px solid var(--border);border-radius:12px;padding:20px;text-align:center;">
+            <div style="color:var(--text-muted);font-size:0.9em;">Isi form di kiri untuk melihat preview karakter</div>
+        </div>
+    </div>
+`;
+   } else if (tab === 'edit') {
+    form.innerHTML = `
+        <h3>✏️ Edit Karakter</h3>
+        <div class="form-section-inner">
+            <input id="editSearchInput" placeholder="🔍 Ketik nama karakter..." 
+                oninput="filterEditSelect()" style="margin-bottom:8px;">
+            <select id="editCharSelect" onchange="loadCharacterForEdit()" 
+                size="5" style="margin-bottom:15px;width:100%;border-radius:8px;padding:6px;">
+                <option value="">Ketik nama di atas untuk mencari...</option>
+            </select>
+            <div id="editForm" style="display:none;">
+                <input id="editCharName" placeholder="✦ Nama karakter" readonly>
+                <select id="editCharGender">
+                    <option value="male">♂ Laki-laki</option>
+                    <option value="female">♀ Perempuan</option>
+                    <option value="anomali">⚠ Anomali</option>
                 </select>
-                <div id="editForm" style="display:none;">
-                    <input id="editCharName" placeholder="✦ Nama karakter" readonly>
-                    <select id="editCharGender">
-                        <option value="male">♂ Laki-laki</option>
-                        <option value="female">♀ Perempuan</option>
-                        <option value="anomali">⚠ Anomali</option>
-                    </select>
-                    <input id="editCharDesc" placeholder="Deskripsi singkat">
-                    <textarea id="editCharDetails" placeholder="Deskripsi lengkap..."></textarea>
-                    <input id="editCharWords" placeholder="Kata-kata khas">
-                    <div class="traits-form">
-                        <label>⚔️ Brave <input id="editTraitBrave" type="number" min="0" max="3" value="0"></label>
-                        <label>🧠 Smart <input id="editTraitSmart" type="number" min="0" max="3" value="0"></label>
-                        <label>🌸 Gentle <input id="editTraitGentle" type="number" min="0" max="3" value="0"></label>
-                        <label>👑 Leader <input id="editTraitLeader" type="number" min="0" max="3" value="0"></label>
-                        <label>🔥 Warm <input id="editTraitWarm" type="number" min="0" max="3" value="0"></label>
-                        <label>🛡️ Cautious <input id="editTraitCautious" type="number" min="0" max="3" value="0"></label>
-                    </div>
-                    <div class="form-action-row">
-                        <button onclick="saveEditedCharacter()">💾 Simpan Perubahan</button>
-                        <button onclick="deleteCharacter()">🗑️ Hapus Karakter</button>
-                    </div>
+                <input id="editCharDesc" placeholder="Deskripsi singkat">
+                <textarea id="editCharDetails" placeholder="Deskripsi lengkap..."></textarea>
+                <input id="editCharWords" placeholder="Kata-kata khas">
+                <div class="traits-form">
+                    <label>⚔️ Brave <input id="editTraitBrave" type="number" min="0" max="3" value="0"></label>
+                    <label>🧠 Smart <input id="editTraitSmart" type="number" min="0" max="3" value="0"></label>
+                    <label>🌸 Gentle <input id="editTraitGentle" type="number" min="0" max="3" value="0"></label>
+                    <label>👑 Leader <input id="editTraitLeader" type="number" min="0" max="3" value="0"></label>
+                    <label>🔥 Warm <input id="editTraitWarm" type="number" min="0" max="3" value="0"></label>
+                    <label>🛡️ Cautious <input id="editTraitCautious" type="number" min="0" max="3" value="0"></label>
+                </div>
+                <div class="form-action-row">
+                    <button onclick="saveEditedCharacter()">💾 Simpan Perubahan</button>
+                    <button onclick="deleteCharacter()">🗑️ Hapus Karakter</button>
                 </div>
             </div>
-        `;
-        // Populate edit select
-        const editSelect = document.getElementById('editCharSelect');
-        if (editSelect) {
-            editSelect.innerHTML = '<option value="">Pilih karakter untuk diedit...</option>';
-            characters.forEach(ch => {
-                const opt = document.createElement('option');
-                opt.value = ch.name;
-                opt.textContent = stripCharacterPrefix(ch.name);
-                editSelect.appendChild(opt);
-            });
-        }
-        list.innerHTML = '';
+        </div>
+    `;
+    list.innerHTML = '';
     } else if (tab === 'mappings') {
         form.innerHTML = `
             <h3>🔗 Mapping Nama ke Karakter</h3>
@@ -3865,11 +4054,71 @@ function importJSON() {
 function renderStats() {
     const el = document.getElementById('statsContent');
     if (!el) return;
-    const total = characters.length;
-    const byGender = characters.reduce((acc, c) => { acc[c.gender] = (acc[c.gender] || 0) + 1; return acc; }, {});
-    el.innerHTML = `<p>Total karakter: ${total}</p><p>By gender: ${JSON.stringify(byGender)}</p>`;
-}
 
+    const total = characters.length;
+    const byGender = characters.reduce((acc, c) => {
+        acc[c.gender] = (acc[c.gender] || 0) + 1;
+        return acc;
+    }, {});
+
+    // Ambil data gacha stats
+    const statsRaw = localStorage.getItem('gachaStats');
+    const gachaStats = statsRaw ? JSON.parse(statsRaw) : {};
+    const sorted = Object.entries(gachaStats)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 10);
+    const maxCount = sorted.length > 0 ? sorted[0][1] : 1;
+
+    const topHtml = sorted.length === 0
+        ? '<p style="color:var(--text-muted);font-size:0.9em;">Belum ada data gacha. Coba gacha dulu!</p>'
+        : sorted.map(([ name, count ], i) => {
+            const pct = Math.round((count / maxCount) * 100);
+            const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : `${i+1}.`;
+            const char = characters.find(c => c.name === name);
+            return `
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+                    <div style="width:28px;text-align:center;font-size:1.1em;">${medal}</div>
+                    ${char?.img ? `<img src="${char.img}" style="width:40px;height:40px;border-radius:50%;object-fit:cover;border:2px solid var(--border);">` : '<div style="width:40px;height:40px;border-radius:50%;background:var(--border);"></div>'}
+                    <div style="flex:1;">
+                        <div style="font-weight:800;font-size:0.9em;color:var(--text-primary);">${name}</div>
+                        <div style="height:8px;background:var(--border);border-radius:4px;margin-top:4px;overflow:hidden;">
+                            <div style="height:100%;width:${pct}%;background:var(--blue);border-radius:4px;transition:width 0.5s ease;"></div>
+                        </div>
+                    </div>
+                    <div style="font-weight:800;color:var(--blue);font-size:0.95em;min-width:32px;text-align:right;">${count}x</div>
+                </div>
+            `;
+        }).join('');
+
+    el.innerHTML = `
+        <div style="margin-bottom:20px;padding:14px;background:var(--bg-section);border:1.5px solid var(--border);border-radius:12px;">
+            <div style="display:flex;gap:20px;flex-wrap:wrap;">
+                <div style="text-align:center;">
+                    <div style="font-size:1.8em;font-weight:900;color:var(--blue);">${total}</div>
+                    <div style="font-size:0.8em;color:var(--text-muted);">Total Karakter</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:1.8em;font-weight:900;color:#db2777;">${byGender.female || 0}</div>
+                    <div style="font-size:0.8em;color:var(--text-muted);">Perempuan ♀</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:1.8em;font-weight:900;color:#2563eb;">${byGender.male || 0}</div>
+                    <div style="font-size:0.8em;color:var(--text-muted);">Laki-laki ♂</div>
+                </div>
+                <div style="text-align:center;">
+                    <div style="font-size:1.8em;font-weight:900;color:#d97706;">${byGender.anomali || 0}</div>
+                    <div style="font-size:0.8em;color:var(--text-muted);">Anomali ⚠</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding:14px;background:var(--bg-section);border:1.5px solid var(--border);border-radius:12px;">
+            <div style="font-family:'Cinzel',serif;font-weight:700;color:var(--blue);margin-bottom:14px;">🏆 Top Karakter Terpopuler</div>
+            ${topHtml}
+            ${sorted.length > 0 ? `<button onclick="resetGachaStats()" style="margin-top:12px;background:var(--red-pale);color:var(--red);border:1.5px solid #fecaca;padding:6px 14px;border-radius:8px;font-size:0.8em;font-weight:700;">🗑️ Reset Statistik</button>` : ''}
+        </div>
+    `;
+}
 // initialize default admin tab
 
 // =============================================
@@ -3888,6 +4137,11 @@ function importFromFile(input) {
     reader.readAsText(file);
 }
 
+function resetGachaStats() {
+    if (!confirm('Reset semua statistik gacha?')) return;
+    localStorage.removeItem('gachaStats');
+    renderStats();
+}
 // Hapus semua data custom (karakter, traits, mapping) dari localStorage
 function resetAllCustomData() {
     if (!confirm('Hapus semua karakter custom dan mapping? Karakter bawaan tidak terpengaruh.')) return;
@@ -3931,4 +4185,4 @@ function exportJSON() {
     alert(`Backup berhasil! ${customChars.length} karakter custom disimpan.`);
 }
 
-if (document.getElementById('adminPanel')) switchAdminTab('characters');
+//if (document.getElementById('adminPanel')) switchAdminTab('characters');
