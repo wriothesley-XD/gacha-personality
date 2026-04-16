@@ -5762,12 +5762,7 @@
   "words": "Aku tidak akan pernah menyerah, apa pun yang terjadi.",
   "sound": "sounds/go_youn_jung.mp3",
   "traits": { "brave": 2, "smart": 2, "gentle": 2, "leader": 1, "warm": 2, "cautious": 1 }
-} , {
-  "_info": "Gacha Personality - Backup Data",
-  "_date": "2026-04-16T00:48:27.325Z",
-  "_totalCharacters": 104,
-  "characters": [
-    {
+} ,{
       "name": "J1BR4",
       "gender": "anomali",
       "img": "images/jibra.png",
@@ -7254,10 +7249,6 @@
     "jibra": "J1BR4",
     "jibar": "Jane Doe"
   }
-}
-]
-  ,
-  "nameMapping": {}
 }
 ]
   ,
