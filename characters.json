@@ -2880,6 +2880,1498 @@
   "words": "Aku tidak akan pernah menyerah, apa pun yang terjadi.",
   "sound": "sounds/go_youn_jung.mp3",
   "traits": { "brave": 2, "smart": 2, "gentle": 2, "leader": 1, "warm": 2, "cautious": 1 }
+} , {
+  "_info": "Gacha Personality - Backup Data",
+  "_date": "2026-04-16T00:48:27.325Z",
+  "_totalCharacters": 104,
+  "characters": [
+    {
+      "name": "J1BR4",
+      "gender": "anomali",
+      "img": "images/jibra.png",
+      "sound": "sounds/jibra.mp3",
+      "desc": "4NOMAL1, SUK4 T1DUR, P3MAL4S",
+      "details": "SU..K4 BERG4DANG, CU3K, KE-KUR4NGAN MOT1V4SI, 4PCB",
+      "words": "! SYNTAX ERROR !"
+    },
+    {
+      "name": "Lumine",
+      "gender": "female",
+      "img": "images/lumine.png",
+      "desc": "Petualang berani",
+      "details": "Lumine adalah petualang yang berani dan penuh tekad, selalu siap menjelajahi dunia untuk mencari saudaranya. Ia memiliki kekuatan luar biasa dan selalu melindungi teman-temannya.",
+      "words": "Aku akan menemukanmu, Aether!",
+      "sound": "sounds/lumine.mp3"
+    },
+    {
+      "name": "Aether",
+      "gender": "male",
+      "img": "images/aether.png",
+      "desc": "Petualang misterius",
+      "details": "Aether adalah petualang misterius yang hilang, selalu mencari saudarinya dengan tekad kuat. Ia memiliki kekuatan elemental dan selalu membantu orang lain.",
+      "words": "Lumine, di mana kamu?",
+      "sound": "sounds/aether.mp3"
+    },
+    {
+      "name": "Jean",
+      "gender": "female",
+      "img": "images/jean.png",
+      "desc": "Acting Grand Master",
+      "details": "Jean adalah pemimpin Knights of Favonius yang tegas dan bijak, selalu memikirkan kesejahteraan Mondstadt. Ia bekerja keras dan selalu siap melindungi kota.",
+      "words": "Sebagai Acting Grand Master, aku akan melindungi Mondstadt!",
+      "sound": "sounds/jean.mp3"
+    },
+    {
+      "name": "Diluc",
+      "gender": "male",
+      "img": "images/diluc.png",
+      "desc": "Darknight Hero",
+      "details": "Diluc adalah pemilik Dawn Winery yang misterius, selalu melindungi Mondstadt di malam hari. Ia memiliki kekuatan api yang kuat dan selalu berjuang untuk keadilan.",
+      "words": "Keadilan harus ditegakkan.",
+      "sound": "sounds/diluc.mp3"
+    },
+    {
+      "name": "Venti",
+      "gender": "male",
+      "img": "images/venti.png",
+      "desc": "Bard bebas",
+      "details": "Venti adalah bard yang bebas dan ceria, selalu bermain musik dan menyebarkan kegembiraan. Ia adalah anemo archon yang menyamar sebagai manusia.",
+      "words": "Angin akan membawamu ke mana saja!",
+      "sound": "sounds/venti.mp3"
+    },
+    {
+      "name": "Zhongli",
+      "gender": "male",
+      "img": "images/zhongli.png",
+      "desc": "Consultant Wangsheng Funeral Parlor",
+      "details": "Zhongli adalah geo archon yang bijak dan tenang, selalu memberikan nasihat yang mendalam. Ia memiliki pengetahuan luas tentang sejarah dan budaya Liyue.",
+      "words": "Kontrak adalah kontrak.",
+      "sound": "sounds/zhongli.mp3"
+    },
+    {
+      "name": "Ganyu",
+      "gender": "female",
+      "img": "images/ganyu.png",
+      "desc": "Secretary di Yuehai Pavilion",
+      "details": "Ganyu adalah sekretaris yang rajin dan lembut, selalu bekerja keras untuk Liyue. Ia adalah adepti yang setia dan selalu membantu orang lain.",
+      "words": "Aku akan menyelesaikan tugasku.",
+      "sound": "sounds/ganyu.mp3"
+    },
+    {
+      "name": "Keqing",
+      "gender": "female",
+      "img": "images/keqing.png",
+      "desc": "Yuheng of Liyue Qixing",
+      "details": "Keqing adalah pemimpin yang tegas dan ambisius, selalu mendorong perubahan di Liyue. Ia memiliki visi yang kuat untuk masa depan.",
+      "words": "Perubahan adalah kunci kemajuan.",
+      "sound": "sounds/keqing.mp3"
+    },
+    {
+      "name": "Xiao",
+      "gender": "male",
+      "img": "images/xiao.png",
+      "desc": "Guardian Yaksha",
+      "details": "Xiao adalah yaksha yang kuat dan pendiam, selalu melindungi Liyue dari bahaya. Ia memiliki masa lalu yang kelam namun selalu setia.",
+      "words": "Aku akan melindungi Liyue.",
+      "sound": "sounds/xiao.mp3"
+    },
+    {
+      "name": "Hu Tao",
+      "gender": "female",
+      "img": "images/hu_tao.png",
+      "desc": "Direktur Wangsheng Funeral Parlor",
+      "details": "Hu Tao adalah direktur yang energik dan unik, selalu menghibur orang dengan caranya sendiri. Ia memiliki filosofi hidup yang menarik.",
+      "words": "Hidup adalah pesta!",
+      "sound": "sounds/hu_tao.mp3"
+    },
+    {
+      "name": "Ei",
+      "gender": "female",
+      "img": "images/ei.png",
+      "desc": "Raiden Shogun",
+      "details": "Ei adalah electro archon yang kuat dan bijak, selalu menegakkan eternity di Inazuma.",
+      "words": "Eternity adalah segalanya.",
+      "sound": "sounds/ei.mp3"
+    },
+    {
+      "name": "Kazuha",
+      "gender": "male",
+      "img": "images/kazuha.png",
+      "desc": "Wandering Samurai",
+      "details": "Kazuha adalah samurai yang bebas dan bijak, selalu mengikuti angin dan membantu teman-teman.",
+      "words": "Angin akan membawaku ke mana saja.",
+      "sound": "sounds/kazuha.mp3"
+    },
+    {
+      "name": "Ayaka",
+      "gender": "female",
+      "img": "images/ayaka.png",
+      "desc": "Shirasagi Himegimi",
+      "details": "Ayaka adalah putri yang anggun dan kuat, selalu melindungi Inazuma dengan pedangnya.",
+      "words": "Aku akan melindungi Inazuma.",
+      "sound": "sounds/ayaka.mp3"
+    },
+    {
+      "name": "Yoimiya",
+      "gender": "female",
+      "img": "images/yoimiya.png",
+      "desc": "Queen of the Summer Festival",
+      "details": "Yoimiya adalah pembuat kembang api yang ceria, selalu membawa kegembiraan ke festival.",
+      "words": "Mari kita rayakan!",
+      "sound": "sounds/yoimiya.mp3"
+    },
+    {
+      "name": "Itto",
+      "gender": "male",
+      "img": "images/itto.png",
+      "desc": "Leader Arataki Gang",
+      "details": "Itto adalah oni yang kuat dan konyol, selalu mencari petualangan dengan gengnya.",
+      "words": "Aku adalah yang terkuat!",
+      "sound": "sounds/itto.mp3"
+    },
+    {
+      "name": "Gorou",
+      "gender": "male",
+      "img": "images/gorou.png",
+      "desc": "General Watatsumi Army",
+      "details": "Gorou adalah jenderal yang setia dan bijak, selalu memimpin pasukan dengan strategi.",
+      "words": "Ikuti aku!",
+      "sound": "sounds/gorou.mp3"
+    },
+    {
+      "name": "Kokomi",
+      "gender": "female",
+      "img": "images/kokomi.png",
+      "desc": "Divine Priestess",
+      "details": "Kokomi adalah pemimpin yang bijak dan strategis, selalu merencanakan untuk kemenangan.",
+      "words": "Strategi adalah kunci.",
+      "sound": "sounds/kokomi.mp3"
+    },
+    {
+      "name": "Tartaglia",
+      "gender": "male",
+      "img": "images/tartaglia.png",
+      "desc": "Childe",
+      "details": "Tartaglia adalah harbinger yang kuat dan ambisius, selalu mencari pertarungan.",
+      "words": "Mari kita bertarung!",
+      "sound": "sounds/tartaglia.mp3"
+    },
+    {
+      "name": "Scaramouche",
+      "gender": "male",
+      "img": "images/scaramouche.png",
+      "desc": "Wanderer",
+      "details": "Scaramouche adalah sosok yang misterius dan kuat, selalu mencari jati dirinya.",
+      "words": "Aku bukan siapa-siapa.",
+      "sound": "sounds/scaramouche.mp3"
+    },
+    {
+      "name": "Dainsleif",
+      "gender": "male",
+      "img": "images/dainsleif.png",
+      "desc": "Twilight Sword",
+      "details": "Dainsleif adalah penjaga yang bijak dan kuat, selalu melindungi pengetahuan kuno.",
+      "words": "Pengetahuan adalah beban.",
+      "sound": "sounds/dainsleif.mp3"
+    },
+    {
+      "name": "Albedo",
+      "gender": "male",
+      "img": "images/albedo.png",
+      "desc": "Chief Alchemist",
+      "details": "Albedo adalah alkemis yang genius, selalu bereksperimen dengan kreasi.",
+      "words": "Sains adalah seni.",
+      "sound": "sounds/albedo.mp3"
+    },
+    {
+      "name": "Sucrose",
+      "gender": "female",
+      "img": "images/sucrose.png",
+      "desc": "Assistant Alchemist",
+      "details": "Sucrose adalah alkemis yang rajin dan pemalu, selalu membantu penelitian.",
+      "words": "Mari kita teliti.",
+      "sound": "sounds/sucrose.mp3"
+    },
+    {
+      "name": "Lisa",
+      "gender": "female",
+      "img": "images/lisa.png",
+      "desc": "Librarian",
+      "details": "Lisa adalah pustakawan yang malas namun cerdas, selalu tahu segalanya.",
+      "words": "Pengetahuan adalah kekuatan.",
+      "sound": "sounds/lisa.mp3"
+    },
+    {
+      "name": "Razor",
+      "gender": "male",
+      "img": "images/razor.png",
+      "desc": "Wolf Boy",
+      "details": "Razor adalah anak serigala yang kuat dan polos, selalu melindungi hutan.",
+      "words": "Aku adalah serigala.",
+      "sound": "sounds/razor.mp3"
+    },
+    {
+      "name": "Fischl",
+      "gender": "female",
+      "img": "images/fischl.png",
+      "desc": "Prinzessin der Verurteilung",
+      "details": "Fischl adalah putri yang dramatis, selalu berbicara dalam bahasa kuno.",
+      "words": "Aku adalah putri!",
+      "sound": "sounds/fischl.mp3"
+    },
+    {
+      "name": "Bennett",
+      "gender": "male",
+      "img": "images/bennett.png",
+      "desc": "Adventurer",
+      "details": "Bennett adalah petualang yang malang namun optimis, selalu berusaha positif.",
+      "words": "Petualangan menanti!",
+      "sound": "sounds/bennett.mp3"
+    },
+    {
+      "name": "Noelle",
+      "gender": "female",
+      "img": "images/noelle.png",
+      "desc": "Maid",
+      "details": "Noelle adalah pelayan yang rajin dan kuat, selalu membantu orang lain.",
+      "words": "Aku akan membantu!",
+      "sound": "sounds/noelle.mp3"
+    },
+    {
+      "name": "Barbara",
+      "gender": "female",
+      "img": "images/barbara.png",
+      "desc": "Deaconess",
+      "details": "Barbara adalah penyanyi yang penyayang, selalu menyembuhkan dengan lagu.",
+      "words": "Mari bernyanyi bersama.",
+      "sound": "sounds/barbara.mp3"
+    },
+    {
+      "name": "Rosaria",
+      "gender": "female",
+      "img": "images/rosaria.png",
+      "desc": "Nun",
+      "details": "Rosaria adalah biarawati yang misterius dan kuat, selalu melindungi gereja.",
+      "words": "Doa adalah senjata.",
+      "sound": "sounds/rosaria.mp3"
+    },
+    {
+      "name": "Eula",
+      "gender": "female",
+      "img": "images/eula.png",
+      "desc": "Spindrift Knight",
+      "details": "Eula adalah ksatria yang bangga dan kuat, selalu menegakkan keadilan.",
+      "words": "Keadilan akan ditegakkan.",
+      "sound": "sounds/eula.mp3"
+    },
+    {
+      "name": "Amber",
+      "gender": "female",
+      "img": "images/amber.png",
+      "desc": "Outrider",
+      "details": "Amber adalah outrider yang ceria dan berani, selalu siap membantu.",
+      "words": "Aku akan terbang!",
+      "sound": "sounds/amber.mp3"
+    },
+    {
+      "name": "Kaeya",
+      "gender": "male",
+      "img": "images/kaeya.png",
+      "desc": "Cavalry Captain",
+      "details": "Kaeya adalah kapten yang misterius dan karismatik, selalu menyimpan rahasia.",
+      "words": "Rahasia adalah kekuatan.",
+      "sound": "sounds/kaeya.mp3"
+    },
+    {
+      "name": "Xiangling",
+      "gender": "female",
+      "img": "images/xiangling.png",
+      "desc": "Chef",
+      "details": "Xiangling adalah koki yang antusias, selalu bereksperimen dengan makanan.",
+      "words": "Mari makan!",
+      "sound": "sounds/xiangling.mp3"
+    },
+    {
+      "name": "Beidou",
+      "gender": "female",
+      "img": "images/beidou.png",
+      "desc": "Captain Crux",
+      "details": "Beidou adalah kapten yang kuat dan bebas, selalu menjelajahi laut.",
+      "words": "Laut adalah rumahku.",
+      "sound": "sounds/beidou.mp3"
+    },
+    {
+      "name": "Ningguang",
+      "gender": "female",
+      "img": "images/ningguang.png",
+      "desc": "Tianquan of Liyue Qixing",
+      "details": "Ningguang adalah pemimpin yang bijak dan kaya, selalu mengontrol ekonomi Liyue.",
+      "words": "Kekayaan adalah kekuatan.",
+      "sound": "sounds/ningguang.mp3"
+    },
+    {
+      "name": "Xinyan",
+      "gender": "female",
+      "img": "images/xinyan.png",
+      "desc": "Rock 'n' Roll Musician",
+      "details": "Xinyan adalah musisi yang berani, selalu membawa musik rock ke Liyue.",
+      "words": "Mari rock!",
+      "sound": "sounds/xinyan.mp3"
+    },
+    {
+      "name": "Yanfei",
+      "gender": "female",
+      "img": "images/yanfei.png",
+      "desc": "Legal Adviser",
+      "details": "Yanfei adalah pengacara yang cerdas dan adil, selalu menegakkan hukum.",
+      "words": "Hukum adalah adil.",
+      "sound": "sounds/yanfei.mp3"
+    },
+    {
+      "name": "Shenhe",
+      "gender": "female",
+      "img": "images/shenhe.png",
+      "desc": "Disciple",
+      "details": "Shenhe adalah murid yang kuat dan tenang, selalu mengendalikan emosi.",
+      "words": "Ketenangan adalah kekuatan.",
+      "sound": "sounds/shenhe.mp3"
+    },
+    {
+      "name": "Yun Jin",
+      "gender": "female",
+      "img": "images/yun_jin.png",
+      "desc": "Opera Singer",
+      "details": "Yun Jin adalah penyanyi opera yang anggun, selalu menghibur penonton.",
+      "words": "Mari tonton pertunjukan.",
+      "sound": "sounds/yun_jin.mp3"
+    },
+    {
+      "name": "Kuki Shinobu",
+      "gender": "female",
+      "img": "images/kuki_shinobu.png",
+      "desc": "Deputy Leader Arataki Gang",
+      "details": "Shinobu adalah wakil pemimpin yang bijak, selalu mengatur geng dengan tenang.",
+      "words": "Mari kita atur.",
+      "sound": "sounds/kuki_shinobu.mp3"
+    },
+    {
+      "name": "Heizou",
+      "gender": "male",
+      "img": "images/heizou.png",
+      "desc": "Detective",
+      "details": "Heizou adalah detektif yang cerdas dan santai, selalu menyelesaikan misteri.",
+      "words": "Aku tahu siapa pelakunya.",
+      "sound": "sounds/heizou.mp3"
+    },
+    {
+      "name": "Tighnari",
+      "gender": "male",
+      "img": "images/tighnari.png",
+      "desc": "Forest Watcher",
+      "details": "Tighnari adalah penjaga hutan yang bijak, selalu melindungi ekosistem.",
+      "words": "Hutan adalah hidup.",
+      "sound": "sounds/tighnari.mp3"
+    },
+    {
+      "name": "Collei",
+      "gender": "female",
+      "img": "images/collei.png",
+      "desc": "Trainee Forest Ranger",
+      "details": "Collei adalah ranger muda yang berani, selalu belajar melindungi hutan.",
+      "words": "Aku akan melindungi hutan.",
+      "sound": "sounds/collei.mp3"
+    },
+    {
+      "name": "Dori",
+      "gender": "female",
+      "img": "images/dori.png",
+      "desc": "Merchant",
+      "details": "Dori adalah pedagang yang cerdas, selalu menawar dengan bijak.",
+      "words": "Mari kita tawar-menawar.",
+      "sound": "sounds/dori.mp3"
+    },
+    {
+      "name": "Cyno",
+      "gender": "male",
+      "img": "images/cyno.png",
+      "desc": "General Mahamatra",
+      "details": "Cyno adalah jenderal yang adil dan kuat, selalu menegakkan hukum.",
+      "words": "Hukum adalah absolut.",
+      "sound": "sounds/cyno.mp3"
+    },
+    {
+      "name": "Candace",
+      "gender": "female",
+      "img": "images/candace.png",
+      "desc": "Guardian",
+      "details": "Candace adalah penjaga yang kuat, selalu melindungi oasis.",
+      "words": "Aku akan menjaga oasis.",
+      "sound": "sounds/candace.mp3"
+    },
+    {
+      "name": "Nilou",
+      "gender": "female",
+      "img": "images/nilou.png",
+      "desc": "Dancer",
+      "details": "Nilou adalah penari yang anggun, selalu membawa keindahan ke pertunjukan.",
+      "words": "Mari kita dansa.",
+      "sound": "sounds/nilou.mp3"
+    },
+    {
+      "name": "Nahida",
+      "gender": "female",
+      "img": "images/nahida.png",
+      "desc": "Lesser Lord Kusanali",
+      "details": "Nahida adalah archon yang bijak, selalu mencari pengetahuan.",
+      "words": "Pengetahuan adalah cahaya.",
+      "sound": "sounds/nahida.mp3"
+    },
+    {
+      "name": "Layla",
+      "gender": "female",
+      "img": "images/layla.png",
+      "desc": "Astronomer",
+      "details": "Layla adalah astronom yang pemalu, selalu mempelajari bintang.",
+      "words": "Bintang adalah misteri.",
+      "sound": "sounds/layla.mp3"
+    },
+    {
+      "name": "Faruzan",
+      "gender": "female",
+      "img": "images/faruzan.png",
+      "desc": "Scholar",
+      "details": "Faruzan adalah sarjana yang bijak, selalu berbagi pengetahuan kuno.",
+      "words": "Pengetahuan kuno adalah harta.",
+      "sound": "sounds/faruzan.mp3"
+    },
+    {
+      "name": "Wanderer",
+      "gender": "male",
+      "img": "images/wanderer.png",
+      "desc": "Free Spirit",
+      "details": "Wanderer adalah sosok bebas yang kuat, selalu menjelajahi dunia.",
+      "words": "Aku bebas.",
+      "sound": "sounds/wanderer.mp3"
+    },
+    {
+      "name": "Alhaitham",
+      "gender": "male",
+      "img": "images/alhaitham.png",
+      "desc": "Scribe",
+      "details": "Alhaitham adalah penulis yang cerdas, selalu mencari kebenaran.",
+      "words": "Kebenaran adalah penting.",
+      "sound": "sounds/alhaitham.mp3"
+    },
+    {
+      "name": "Kaveh",
+      "gender": "male",
+      "img": "images/kaveh.png",
+      "desc": "Architect",
+      "details": "Kaveh adalah arsitek yang kreatif, selalu merancang bangunan indah.",
+      "words": "Kreativitas adalah seni.",
+      "sound": "sounds/kaveh.mp3"
+    },
+    {
+      "name": "Baizhu",
+      "gender": "male",
+      "img": "images/baizhu.png",
+      "desc": "Pharmacist",
+      "details": "Baizhu adalah apoteker yang bijak, selalu membantu dengan obat.",
+      "words": "Kesehatan adalah prioritas.",
+      "sound": "sounds/baizhu.mp3"
+    },
+    {
+      "name": "Dehya",
+      "gender": "female",
+      "img": "images/dehya.png",
+      "desc": "Mercenary",
+      "details": "Dehya adalah tentara bayaran yang kuat, selalu melindungi orang lemah.",
+      "words": "Aku akan melindungi.",
+      "sound": "sounds/dehya.mp3"
+    },
+    {
+      "name": "Mika",
+      "gender": "male",
+      "img": "images/mika.png",
+      "desc": "Cartographer",
+      "details": "Mika adalah kartografer yang teliti, selalu memetakan dunia.",
+      "words": "Peta adalah panduan.",
+      "sound": "sounds/mika.mp3"
+    },
+    {
+      "name": "Kirara",
+      "gender": "female",
+      "img": "images/kirara.png",
+      "desc": "Courier",
+      "details": "Kirara adalah kurir yang cepat, selalu mengantar paket dengan aman.",
+      "words": "Paket aman bersamaku.",
+      "sound": "sounds/kirara.mp3"
+    },
+    {
+      "name": "Lynette",
+      "gender": "female",
+      "img": "images/lynette.png",
+      "desc": "Magician",
+      "details": "Lynette adalah pesulap yang misterius, selalu menghibur dengan trik.",
+      "words": "Trik adalah seni.",
+      "sound": "sounds/lynette.mp3"
+    },
+    {
+      "name": "Lyney",
+      "gender": "male",
+      "img": "images/lyney.png",
+      "desc": "Magician penuh pesona untuk menjaga keseimbangan di Fontaine.",
+      "details": "Lyney adalah magician yang penuh pesona dari Fontaine, selalu menghibur penonton dengan trik-trik ajaibnya. Ia menggunakan keahliannya untuk menjaga keseimbangan dan keadilan di kota Fontaine, sambil melindungi teman-temannya dengan kecerdasan dan keberaniannya. Meskipun terlihat misterius, ia memiliki hati yang hangat dan selalu siap membantu orang yang membutuhkan.",
+      "words": "Mari kita lihat trik ini!",
+      "sound": "sounds/lyney.mp3"
+    },
+    {
+      "name": "Furina",
+      "gender": "female",
+      "img": "images/furina.png",
+      "desc": "Archon Fontaine yang dramatis",
+      "details": "Furina adalah Hydro Archon yang dramatis dan penuh teater, selalu tampil dengan gaya yang berlebihan. Ia sangat mencintai drama dan sering kali berperan sebagai hakim di pengadilan Fontaine. Di balik kepribadiannya yang eksentrik, ia menyimpan beban sebagai archon yang harus menjaga keseimbangan di Fontaine. Ia sangat peduli dengan rakyatnya dan selalu berusaha untuk melindungi mereka dari ancaman yang datang. Furina memiliki kemampuan untuk mengendalikan air dengan luar biasa, dan ia sering kali menggunakan ilusi dan drama untuk menyelesaikan masalah. Meskipun terlihat sombong dan angkuh, ia sebenarnya memiliki hati yang lembut dan selalu siap membantu teman-teman. Ia percaya bahwa kehidupan adalah sebuah panggung, dan ia harus memainkan perannya dengan sempurna.",
+      "words": "Keadilan akan ditegakkan!",
+      "sound": "sounds/furina.mp3"
+    },
+    {
+      "name": "Klee",
+      "gender": "female",
+      "img": "images/klee.png",
+      "desc": "Ksatria Api",
+      "details": "Klee adalah ksatria api dari Mondstadt, selalu menyebabkan ledakan dengan bomnya. Ia imut dan energik, selalu penuh semangat untuk petualangan meskipun sering kali menimbulkan masalah. Meskipun terlihat polos, ia memiliki hati yang hangat dan selalu berusaha membuat orang di sekitarnya bahagia dengan caranya sendiri.",
+      "words": "Boom!",
+      "sound": "sounds/klee.mp3"
+    },
+    {
+      "name": "Navia",
+      "gender": "female",
+      "img": "images/navia.png",
+      "desc": "Presiden Spina di Rosula",
+      "details": "Navia adalah presiden Spina di Rosula yang kuat dan tegas, selalu melindungi rakyat Fontaine dengan segala cara. Ia memiliki kekuatan luar biasa dalam menggunakan senjata api dan kristal, dan selalu siap menghadapi bahaya. Meskipun terlihat keras, ia memiliki hati yang hangat dan peduli terhadap teman-teman serta keluarganya. Ia percaya bahwa keadilan dan keberanian adalah kunci untuk menjaga perdamaian di Fontaine.",
+      "words": "Aku akan melindungi Fontaine!",
+      "sound": "sounds/navia.mp3"
+    },
+    {
+      "name": "Charlotte",
+      "gender": "female",
+      "img": "images/charlotte.png",
+      "desc": "Reporter Fontaine yang gigih",
+      "details": "Charlotte adalah reporter yang gigih dan penuh semangat dari Fontaine, selalu mencari berita dan kebenaran di balik setiap peristiwa. Ia memiliki kamera yang selalu siap dan tidak pernah takut menghadapi bahaya untuk mendapatkan cerita yang menarik. Meskipun terlihat energik dan antusias, ia sangat peduli dengan orang-orang di sekitarnya dan selalu berusaha membantu mereka. Ia percaya bahwa informasi adalah kekuatan, dan selalu berjuang untuk kebebasan pers di Fontaine.",
+      "words": "Berita harus diketahui semua!",
+      "sound": "sounds/charlotte.mp3"
+    },
+    {
+      "name": "Freya",
+      "gender": "female",
+      "img": "images/freya.png",
+      "desc": "Pahlawan Valkyrie yang kuat",
+      "details": "Freya adalah pahlawan Valkyrie yang kuat dan tangguh, selalu melindungi teman-temannya dengan kekuatan luar biasa. Ia memiliki kemampuan untuk mengendalikan angin dan petir, membuatnya menjadi lawan yang berbahaya di medan perang. Meskipun terlihat keras, ia memiliki hati yang peduli dan selalu siap membantu orang yang membutuhkan. Keberaniannya yang tak tergoyahkan membuatnya menjadi inspirasi bagi banyak orang.",
+      "words": "Aku akan melindungi dunia ini!",
+      "sound": "sounds/freya.mp3"
+    },
+    {
+      "name": "Raiden Mei",
+      "gender": "female",
+      "img": "images/raiden_mei.png",
+      "desc": "Pahlawan Herrscher yang bijak",
+      "details": "Raiden Mei adalah pahlawan Herrscher yang bijak dan kuat, selalu menggunakan kekuatan petirnya untuk melindungi dunia. Ia memiliki kontrol yang luar biasa atas elemen petir dan selalu berusaha mencari keseimbangan antara kekuatan dan empati. Meskipun terlihat tenang, ia memiliki tekad yang kuat untuk melawan kejahatan dan melindungi teman-temannya. Kebijaksanaannya membuatnya menjadi pemimpin yang dihormati.",
+      "words": "Petir akan membawa keadilan!",
+      "sound": "sounds/raiden_mei.mp3"
+    },
+    {
+      "name": "Bronya Zaychik",
+      "gender": "female",
+      "img": "images/bronya_zaychik.png",
+      "desc": "Komandan yang strategis",
+      "details": "Bronya Zaychik adalah komandan yang strategis dan cerdas, selalu merencanakan taktik untuk mengalahkan musuh. Ia memiliki kemampuan untuk mengendalikan teknologi canggih dan selalu memimpin pasukan dengan bijaksana. Meskipun terlihat dingin, ia sangat peduli terhadap teman-temannya dan selalu berusaha menciptakan lingkungan yang aman. Kecerdasannya membuatnya menjadi sosok yang tak tergantikan dalam pertempuran.",
+      "words": "Strategi adalah kunci kemenangan.",
+      "sound": "sounds/bronya_zaychik.mp3"
+    },
+    {
+      "name": "Seele Vollerei",
+      "gender": "female",
+      "img": "images/seele_vollerei.png",
+      "desc": "Pemburu yang gesit",
+      "details": "Seele Vollerei adalah pemburu yang gesit dan pemberani, selalu mengejar targetnya dengan kecepatan luar biasa. Ia memiliki kemampuan untuk bergerak cepat dan menyerang dengan presisi tinggi. Meskipun terlihat misterius, ia memiliki hati yang hangat dan selalu setia terhadap teman-temannya. Keberaniannya dalam menghadapi bahaya membuatnya menjadi legenda di dunia pertempuran.",
+      "words": "Aku akan mengejarmu sampai ujung dunia!",
+      "sound": "sounds/seele_vollerei.mp3"
+    },
+    {
+      "name": "Kiana Kaslana",
+      "gender": "female",
+      "img": "images/kiana_kaslana.png",
+      "desc": "Pahlawan yang energik",
+      "details": "Kiana Kaslana adalah pahlawan yang energik dan pemberani, selalu melawan musuh dengan semangat yang tinggi. Ia memiliki kekuatan Herrscher yang kuat dan selalu berusaha melindungi dunia dari ancaman. Meskipun terlihat nakal, ia memiliki hati yang baik dan selalu mendukung teman-temannya. Energinya yang melimpah membuatnya menjadi inspirasi bagi banyak orang.",
+      "words": "Aku tidak akan menyerah!",
+      "sound": "sounds/kiana_kaslana.mp3"
+    },
+    {
+      "name": "Fu Hua",
+      "gender": "female",
+      "img": "images/fu_hua.png",
+      "desc": "Guru yang bijak",
+      "details": "Fu Hua adalah guru yang bijak dan kuat, selalu membimbing murid-muridnya dengan pengetahuan kuno. Ia memiliki pengalaman bertahun-tahun dan selalu siap melindungi dunia dari bahaya. Meskipun terlihat tenang, ia memiliki kekuatan yang luar biasa dan selalu bertindak demi kebaikan. Kebijaksanaannya membuatnya menjadi panutan bagi generasi muda.",
+      "words": "Pengetahuan adalah senjata terkuat.",
+      "sound": "sounds/fu_hua.mp3"
+    },
+    {
+      "name": "Stelle",
+      "gender": "female",
+      "img": "images/stelle.png",
+      "desc": "Petualang misterius",
+      "details": "Stelle adalah petualang misterius yang jatuh dari luar angkasa, selalu mencari jati dirinya. Ia memiliki kekuatan luar biasa dan selalu membantu teman-temannya dalam petualangan.",
+      "words": "Aku akan menemukan jawabannya.",
+      "sound": "sounds/stelle.mp3"
+    },
+    {
+      "name": "March 7th",
+      "gender": "female",
+      "img": "images/march_7th.png",
+      "desc": "Fotografer ceria",
+      "details": "March 7th adalah fotografer ceria dari Astral Express, selalu mengabadikan momen-momen indah. Ia energik dan selalu mendukung teman-temannya.",
+      "words": "Klik! Foto bagus!",
+      "sound": "sounds/march_7th.mp3"
+    },
+    {
+      "name": "Dan Heng",
+      "gender": "male",
+      "img": "images/dan_heng.png",
+      "desc": "Pemburu misterius",
+      "details": "Dan Heng adalah pemburu misterius dengan masa lalu yang gelap, selalu melindungi teman-temannya. Ia kuat dan bijaksana.",
+      "words": "Aku akan melindungi.",
+      "sound": "sounds/dan_heng.mp3"
+    },
+    {
+      "name": "Welt",
+      "gender": "male",
+      "img": "images/welt.png",
+      "desc": "Pemimpin bijak",
+      "details": "Welt adalah pemimpin bijak dari Astral Express, selalu memberikan nasihat yang mendalam. Ia memiliki pengalaman luas.",
+      "words": "Kita harus berhati-hati.",
+      "sound": "sounds/welt.mp3"
+    },
+    {
+      "name": "Himeko",
+      "gender": "female",
+      "img": "images/himeko.png",
+      "desc": "Navigator yang hangat",
+      "details": "Himeko adalah navigator hangat dari Astral Express, selalu menjaga harmoni di antara awak. Ia bijak dan peduli.",
+      "words": "Mari kita jelajahi bersama.",
+      "sound": "sounds/himeko.mp3"
+    },
+    {
+      "name": "Soekarno",
+      "gender": "male",
+      "img": "images/soekarno.png",
+      "desc": "Proklamator Kemerdekaan Indonesia",
+      "details": "Soekarno adalah proklamator kemerdekaan Indonesia, pemimpin yang visioner dan karismatik. Ia memimpin perjuangan melawan penjajahan Belanda dan menjadi presiden pertama Indonesia. Kebijaksanaannya dan semangat nasionalismenya membuatnya menjadi pahlawan bangsa.",
+      "words": "Merdeka atau mati!",
+      "sound": "sounds/soekarno.mp3"
+    },
+    {
+      "name": "R.A. Kartini",
+      "gender": "female",
+      "img": "images/ra_kartini.png",
+      "desc": "Pahlawan Emansipasi Wanita Indonesia",
+      "details": "R.A. Kartini adalah pahlawan emansipasi wanita Indonesia, pejuang hak pendidikan dan kesetaraan gender. Ia menulis surat-surat yang menginspirasi perubahan sosial di Indonesia. Kebijaksanaannya dan dedikasinya membuatnya menjadi ikon perempuan Indonesia.",
+      "words": "Habis gelap terbitlah terang.",
+      "sound": "sounds/ra_kartini.mp3"
+    },
+    {
+      "name": "Joko Widodo",
+      "gender": "male",
+      "img": "images/joko_widodo.png",
+      "desc": "Presiden Indonesia",
+      "details": "Joko Widodo adalah presiden Indonesia yang fokus pada pembangunan infrastruktur dan kesejahteraan rakyat. Ia dikenal dengan gaya kepemimpinan yang dekat dengan masyarakat dan komitmennya terhadap kemajuan bangsa.",
+      "words": "Kerja, kerja, kerja!",
+      "sound": "sounds/joko_widodo.mp3"
+    },
+    {
+      "name": "Albert Einstein",
+      "gender": "male",
+      "img": "images/albert_einstein.png",
+      "desc": "Ilmuwan Fisika Terkenal",
+      "details": "Albert Einstein adalah ilmuwan fisika terkenal yang merumuskan teori relativitas. Kecerdasannya yang luar biasa mengubah pemahaman manusia tentang alam semesta. Ia juga dikenal sebagai tokoh perdamaian.",
+      "words": "Imajinasi lebih penting daripada pengetahuan.",
+      "sound": "sounds/albert_einstein.mp3"
+    },
+    {
+      "name": "Nikola Tesla",
+      "gender": "male",
+      "img": "images/nikola_tesla.png",
+      "desc": "Penemu Listrik",
+      "details": "Nikola Tesla adalah penemu listrik yang brilian, berkontribusi pada sistem tenaga listrik AC. Inovasinya mengubah dunia modern, meskipun sering kali tidak diakui sepenuhnya.",
+      "words": "Arus listrik adalah kekuatan masa depan.",
+      "sound": "sounds/nikola_tesla.mp3"
+    },
+    {
+      "name": "Marie Curie",
+      "gender": "female",
+      "img": "images/marie_curie.png",
+      "desc": "Ilmuwan Radioaktivitas",
+      "details": "Marie Curie adalah ilmuwan pertama yang memenangkan dua Nobel Prize, pionir dalam penelitian radioaktivitas. Dedikasinya pada sains menginspirasi banyak perempuan di bidang STEM.",
+      "words": "Sains adalah kehidupan.",
+      "sound": "sounds/marie_curie.mp3"
+    },
+    {
+      "name": "Adolf Hitler",
+      "gender": "male",
+      "img": "images/adolf_hitler.png",
+      "desc": "Pemimpin Nazi Jerman",
+      "details": "Adolf Hitler adalah pemimpin Nazi Jerman yang memicu Perang Dunia II. Ia dikenal dengan ideologi fasisnya yang ekstrem dan kebijakan genosida. Figur ini mewakili salah satu periode paling gelap dalam sejarah manusia.",
+      "words": "Satu Reich, satu bangsa, satu pemimpin!",
+      "sound": "sounds/adolf_hitler.mp3"
+    },
+    {
+      "name": "Winston Churchill",
+      "gender": "male",
+      "img": "images/winston_churchill.png",
+      "desc": "Perdana Menteri Inggris",
+      "details": "Winston Churchill adalah Perdana Menteri Inggris selama Perang Dunia II, dikenal dengan pidato-pidatonya yang menginspirasi. Ia memimpin Inggris melawan Nazi dan menjadi simbol ketahanan.",
+      "words": "Kita akan bertarung di pantai!",
+      "sound": "sounds/winston_churchill.mp3"
+    },
+    {
+      "name": "Mahatma Gandhi",
+      "gender": "male",
+      "img": "images/mahatma_gandhi.png",
+      "desc": "Pemimpin Kemerdekaan India",
+      "details": "Mahatma Gandhi adalah pemimpin gerakan kemerdekaan India melalui non-kekerasan. Filosofi satyagraha-nya menginspirasi perjuangan hak asasi manusia di seluruh dunia.",
+      "words": "Mata kekerasan adalah kebenaran.",
+      "sound": "sounds/mahatma_gandhi.mp3"
+    },
+    {
+      "name": "SpongeBob SquarePants",
+      "gender": "male",
+      "img": "images/spongebob.png",
+      "desc": "Spons Laut yang Ceria",
+      "details": "SpongeBob adalah spons laut yang ceria dan energik, selalu penuh semangat untuk bekerja dan bermain. Ia tinggal di bawah laut Bikini Bottom dan bekerja sebagai koki di Krusty Krab.",
+      "words": "Siap kerja!",
+      "sound": "sounds/spongebob.mp3"
+    },
+    {
+      "name": "Patrick Star",
+      "gender": "male",
+      "img": "images/patrick_star.png",
+      "desc": "Bintang Laut yang Malas",
+      "details": "Patrick Star adalah bintang laut yang malas dan polos, sahabat SpongeBob. Ia sering kali menyebabkan masalah dengan kelakuannya yang konyol namun selalu baik hati.",
+      "words": "Apa yang sedang terjadi?",
+      "sound": "sounds/patrick_star.mp3"
+    },
+    {
+      "name": "Boboiboy",
+      "gender": "male",
+      "img": "images/boboiboy.png",
+      "desc": "Pahlawan Super dari Malaysia",
+      "details": "Boboiboy adalah pahlawan super dari Malaysia yang bisa membelah diri menjadi elemen-elemen. Ia melindungi dunia dari alien jahat dengan kekuatan dan keberaniannya.",
+      "words": "Elemen api!",
+      "sound": "sounds/boboiboy.mp3"
+    },
+    {
+      "name": "Gopal",
+      "gender": "male",
+      "img": "images/gopal.png",
+      "desc": "Sahabat Boboiboy yang Cerdas",
+      "details": "Gopal adalah sahabat Boboiboy yang cerdas dan suka makan, selalu membantu dengan ide-ide briliannya. Ia adalah bagian dari geng pahlawan super.",
+      "words": "Aku lapar!",
+      "sound": "sounds/gopal.mp3"
+    },
+    {
+      "name": "Spiderman",
+      "gender": "male",
+      "img": "images/spiderman.png",
+      "desc": "Pahlawan Super dengan Jaring",
+      "details": "Spiderman adalah Peter Parker yang mendapatkan kekuatan laba-laba, melindungi New York dari kejahatan. Ia dikenal dengan moto 'Dengan kekuatan besar datang tanggung jawab besar'.",
+      "words": "Tanggung jawabku!",
+      "sound": "sounds/spiderman.mp3"
+    },
+    {
+      "name": "Captain America",
+      "gender": "male",
+      "img": "images/captain_america.png",
+      "desc": "Pahlawan Super Patriotik",
+      "details": "Captain America adalah Steve Rogers yang super soldier, simbol kebebasan dan keadilan. Ia memimpin Avengers melawan ancaman global.",
+      "words": "Aku bisa melakukan ini sepanjang hari!",
+      "sound": "sounds/captain_america.mp3"
+    },
+    {
+      "name": "Harry Potter",
+      "gender": "male",
+      "img": "images/harry_potter.png",
+      "desc": "Penyihir Muda",
+      "details": "Harry Potter adalah penyihir muda yang bertahan dari kutukan Avada Kedavra, siswa Hogwarts yang melawan Voldemort. Ia dikenal dengan keberanian dan persahabatannya.",
+      "words": "Expecto Patronum!",
+      "sound": "sounds/harry_potter.mp3"
+    },
+    {
+      "name": "Hermione Granger",
+      "gender": "female",
+      "img": "images/hermione_granger.png",
+      "desc": "Penyihir Cerdas",
+      "details": "Hermione Granger adalah penyihir cerdas dan rajin, sahabat Harry Potter. Ia selalu menggunakan kecerdasannya untuk membantu teman-temannya dalam petualangan.",
+      "words": "Ini logika!",
+      "sound": "sounds/hermione_granger.mp3"
+    },
+    {
+      "name": "Naruto Uzumaki",
+      "gender": "male",
+      "img": "images/naruto.png",
+      "desc": "Ninja Hokage",
+      "details": "Naruto Uzumaki adalah ninja yang bercita-cita menjadi Hokage, dikenal dengan semangatnya yang tak pernah padam. Ia melindungi desanya dengan kekuatan dan persahabatan.",
+      "words": "Dattebayo!",
+      "sound": "sounds/naruto.mp3"
+    },
+    {
+      "name": "Goku",
+      "gender": "male",
+      "img": "images/goku.png",
+      "desc": "Pebjuang Saiyan",
+      "details": "Goku adalah pejuang Saiyan yang kuat, selalu melatih diri untuk menjadi lebih kuat. Ia melindungi Bumi dari ancaman alien dengan kekuatan dan kebaikan hatinya.",
+      "words": "Kamehameha!",
+      "sound": "sounds/goku.mp3"
+    },
+    {
+      "name": "Pikachu",
+      "gender": "male",
+      "img": "images/pikachu.png",
+      "desc": "Pokemon Listrik",
+      "details": "Pikachu adalah Pokemon listrik yang lucu dan setia pada Ash. Ia selalu membantu dalam pertarungan dengan serangan listriknya.",
+      "words": "Pika pika!",
+      "sound": "sounds/pikachu.mp3"
+    },
+    {
+      "name": "RM",
+      "gender": "male",
+      "img": "images/rm.png",
+      "desc": "Rapper BTS",
+      "details": "RM adalah leader BTS, rapper yang cerdas dan visioner. Ia menulis lirik yang mendalam dan memimpin grup dengan bijaksana.",
+      "words": "Bermimpilah besar!",
+      "sound": "sounds/rm.mp3"
+    },
+    {
+      "name": "Jisoo",
+      "gender": "female",
+      "img": "images/jisoo.png",
+      "desc": "Idol Blackpink",
+      "details": "Jisoo adalah anggota Blackpink yang elegan dan berbakat, dikenal dengan vokalnya yang indah dan kepribadiannya yang hangat.",
+      "words": "Mari kita bersenang-senang!",
+      "sound": "sounds/jisoo.mp3"
+    },
+    {
+      "name": "James Bond",
+      "gender": "male",
+      "img": "images/james_bond.png",
+      "desc": "Agen Rahasia",
+      "details": "James Bond adalah agen rahasia MI6 yang elegan dan berani, selalu menyelamatkan dunia dari ancaman global. Ia dikenal dengan gaya hidupnya yang mewah dan keterampilannya.",
+      "words": "Bond. James Bond.",
+      "sound": "sounds/james_bond.mp3"
+    },
+    {
+      "name": "Wonder Woman",
+      "gender": "female",
+      "img": "images/wonder_woman.png",
+      "desc": "Pahlawan Amazon",
+      "details": "Wonder Woman adalah Diana Prince, putri Amazon yang kuat dan bijak. Ia melindungi dunia dengan kekuatan dan prinsip keadilannya.",
+      "words": "Untuk keadilan!",
+      "sound": "sounds/wonder_woman.mp3"
+    },
+    {
+      "name": "Iron Man",
+      "gender": "male",
+      "img": "images/iron_man.png",
+      "desc": "Bilioner Playboy",
+      "details": "Iron Man adalah Tony Stark, jenius miliarder yang menciptakan baju besi untuk melindungi dunia. Ia adalah anggota Avengers yang sarkastis namun heroik.",
+      "words": "Saya adalah Iron Man.",
+      "sound": "sounds/iron_man.mp3"
+    },
+    {
+      "name": "Nama Karakter",
+      "gender": "male/female/anomali",
+      "img": "images/nama_file.png",
+      "desc": "Deskripsi singkat karakter",
+      "details": "Deskripsi lengkap karakter yang menjelaskan kepribadian dan latar belakangnya secara detail.",
+      "words": "Kata-kata khas karakter",
+      "sound": "sounds/nama_file.mp3"
+    },
+    {
+      "name": "Contoh Karakter 1",
+      "gender": "male",
+      "img": "images/contoh1.png",
+      "desc": "Pejuang tangguh",
+      "details": "Karakter yang sangat kuat dan selalu melindungi teman-temannya.",
+      "words": "Aku akan melindungimu!",
+      "sound": "sounds/contoh1.mp3"
+    },
+    {
+      "name": "Contoh Karakter 2",
+      "gender": "female",
+      "img": "images/contoh2.png",
+      "desc": "Cewe pintar dan lembut",
+      "details": "Karakter yang sangat cerdas dan selalu membantu orang lain dengan penuh kasih sayang.",
+      "words": "Ayo kita belajar bersama!",
+      "sound": "sounds/contoh2.mp3"
+    },
+    {
+      "name": "bryan",
+      "gender": "anomali",
+      "img": "images/bryan.mp4",
+      "sound": "sounds/bryan.mp3",
+      "desc": "gweh",
+      "details": "gweh",
+      "words": "gweh"
+    }
+  ],
+  "characterTraits": {
+    "J1BR4": {
+      "brave": 1,
+      "smart": 1,
+      "gentle": 1,
+      "leader": 1,
+      "warm": 1,
+      "cautious": 1
+    },
+    "Lumine": {
+      "brave": 3,
+      "leader": 2,
+      "smart": 2
+    },
+    "Aether": {
+      "brave": 3,
+      "smart": 2,
+      "gentle": 1
+    },
+    "Jean": {
+      "leader": 3,
+      "brave": 2,
+      "smart": 2
+    },
+    "Diluc": {
+      "brave": 3,
+      "leader": 2,
+      "smart": 1
+    },
+    "Venti": {
+      "warm": 3,
+      "gentle": 2,
+      "smart": 1
+    },
+    "Zhongli": {
+      "smart": 3,
+      "leader": 2,
+      "gentle": 1
+    },
+    "Ganyu": {
+      "gentle": 3,
+      "smart": 2,
+      "warm": 2
+    },
+    "Keqing": {
+      "leader": 3,
+      "brave": 2,
+      "smart": 3
+    },
+    "Xiao": {
+      "brave": 3,
+      "leader": 1,
+      "cautious": 2
+    },
+    "Hu Tao": {
+      "warm": 3,
+      "brave": 2,
+      "smart": 1
+    },
+    "Ei": {
+      "leader": 3,
+      "smart": 2,
+      "brave": 2
+    },
+    "Kazuha": {
+      "gentle": 2,
+      "smart": 2,
+      "brave": 2
+    },
+    "Ayaka": {
+      "brave": 2,
+      "gentle": 3,
+      "leader": 1
+    },
+    "Yoimiya": {
+      "warm": 3,
+      "brave": 1,
+      "gentle": 2
+    },
+    "Itto": {
+      "brave": 3,
+      "warm": 2,
+      "leader": 1
+    },
+    "Gorou": {
+      "leader": 2,
+      "smart": 2,
+      "brave": 2
+    },
+    "Kokomi": {
+      "smart": 3,
+      "leader": 2,
+      "gentle": 1
+    },
+    "Tartaglia": {
+      "brave": 3,
+      "leader": 1,
+      "smart": 1
+    },
+    "Scaramouche": {
+      "smart": 2,
+      "brave": 2,
+      "cautious": 2
+    },
+    "Dainsleif": {
+      "smart": 3,
+      "brave": 2,
+      "gentle": 1
+    },
+    "Albedo": {
+      "smart": 3,
+      "gentle": 1,
+      "cautious": 2
+    },
+    "Sucrose": {
+      "smart": 2,
+      "gentle": 3,
+      "cautious": 2
+    },
+    "Lisa": {
+      "smart": 3,
+      "gentle": 2,
+      "cautious": 1
+    },
+    "Razor": {
+      "brave": 3,
+      "gentle": 2,
+      "warm": 1
+    },
+    "Fischl": {
+      "brave": 2,
+      "smart": 1,
+      "leader": 1
+    },
+    "Bennett": {
+      "brave": 2,
+      "warm": 3,
+      "gentle": 2
+    },
+    "Noelle": {
+      "gentle": 3,
+      "brave": 2,
+      "warm": 2
+    },
+    "Barbara": {
+      "gentle": 3,
+      "warm": 3,
+      "smart": 1
+    },
+    "Rosaria": {
+      "brave": 2,
+      "smart": 1,
+      "cautious": 2
+    },
+    "Eula": {
+      "brave": 3,
+      "leader": 2,
+      "smart": 1
+    },
+    "Amber": {
+      "brave": 2,
+      "warm": 3,
+      "gentle": 2
+    },
+    "Kaeya": {
+      "smart": 2,
+      "gentle": 1,
+      "leader": 2
+    },
+    "Xiangling": {
+      "warm": 3,
+      "brave": 1,
+      "gentle": 2
+    },
+    "Beidou": {
+      "brave": 3,
+      "leader": 2,
+      "warm": 1
+    },
+    "Ningguang": {
+      "smart": 3,
+      "leader": 3,
+      "gentle": 1
+    },
+    "Xinyan": {
+      "brave": 2,
+      "warm": 2,
+      "gentle": 1
+    },
+    "Yanfei": {
+      "smart": 3,
+      "brave": 1,
+      "gentle": 2
+    },
+    "Shenhe": {
+      "brave": 2,
+      "smart": 1,
+      "cautious": 3
+    },
+    "Yun Jin": {
+      "gentle": 3,
+      "warm": 2,
+      "smart": 1
+    },
+    "Kuki Shinobu": {
+      "smart": 2,
+      "gentle": 2,
+      "leader": 1
+    },
+    "Heizou": {
+      "smart": 3,
+      "brave": 1,
+      "gentle": 1
+    },
+    "Tighnari": {
+      "smart": 2,
+      "gentle": 2,
+      "cautious": 2
+    },
+    "Collei": {
+      "brave": 2,
+      "gentle": 2,
+      "warm": 1
+    },
+    "Dori": {
+      "smart": 2,
+      "gentle": 1,
+      "warm": 2
+    },
+    "Cyno": {
+      "brave": 2,
+      "leader": 2,
+      "smart": 2
+    },
+    "Candace": {
+      "brave": 3,
+      "gentle": 2,
+      "leader": 1
+    },
+    "Nilou": {
+      "gentle": 3,
+      "warm": 2,
+      "brave": 1
+    },
+    "Nahida": {
+      "smart": 3,
+      "gentle": 3,
+      "leader": 1
+    },
+    "Layla": {
+      "smart": 2,
+      "gentle": 2,
+      "cautious": 2
+    },
+    "Faruzan": {
+      "smart": 3,
+      "gentle": 2,
+      "warm": 1
+    },
+    "Wanderer": {
+      "brave": 2,
+      "smart": 2,
+      "gentle": 1
+    },
+    "Alhaitham": {
+      "smart": 3,
+      "gentle": 1,
+      "cautious": 2
+    },
+    "Kaveh": {
+      "smart": 2,
+      "gentle": 2,
+      "warm": 1
+    },
+    "Baizhu": {
+      "smart": 2,
+      "gentle": 3,
+      "warm": 2
+    },
+    "Dehya": {
+      "brave": 3,
+      "gentle": 2,
+      "warm": 1
+    },
+    "Mika": {
+      "smart": 2,
+      "gentle": 2,
+      "cautious": 2
+    },
+    "Kirara": {
+      "brave": 1,
+      "gentle": 2,
+      "warm": 2
+    },
+    "Lynette": {
+      "smart": 2,
+      "gentle": 1,
+      "cautious": 2
+    },
+    "Lyney": {
+      "smart": 3,
+      "brave": 2,
+      "gentle": 1,
+      "leader": 1,
+      "warm": 2,
+      "cautious": 1
+    },
+    "Furina": {
+      "smart": 2,
+      "brave": 2,
+      "leader": 3
+    },
+    "Klee": {
+      "brave": 2,
+      "warm": 3,
+      "smart": 1
+    },
+    "Navia": {
+      "brave": 3,
+      "leader": 2,
+      "warm": 2
+    },
+    "Charlotte": {
+      "brave": 2,
+      "smart": 3,
+      "warm": 2
+    },
+    "Freya": {
+      "brave": 3,
+      "leader": 2,
+      "smart": 1
+    },
+    "Raiden Mei": {
+      "smart": 3,
+      "brave": 2,
+      "leader": 2
+    },
+    "Bronya Zaychik": {
+      "smart": 3,
+      "leader": 3,
+      "brave": 2
+    },
+    "Seele Vollerei": {
+      "brave": 3,
+      "smart": 2,
+      "gentle": 1
+    },
+    "Kiana Kaslana": {
+      "brave": 3,
+      "warm": 2,
+      "leader": 1
+    },
+    "Fu Hua": {
+      "smart": 3,
+      "brave": 2,
+      "gentle": 2
+    },
+    "Stelle": {
+      "brave": 3,
+      "smart": 2,
+      "gentle": 1
+    },
+    "March 7th": {
+      "warm": 3,
+      "gentle": 2,
+      "brave": 1
+    },
+    "Dan Heng": {
+      "brave": 3,
+      "smart": 2,
+      "cautious": 2
+    },
+    "Welt": {
+      "smart": 3,
+      "leader": 2,
+      "gentle": 2
+    },
+    "Himeko": {
+      "warm": 3,
+      "smart": 2,
+      "leader": 1
+    },
+    "Soekarno": {
+      "leader": 3,
+      "brave": 3,
+      "smart": 2
+    },
+    "R.A. Kartini": {
+      "smart": 3,
+      "gentle": 2,
+      "brave": 2
+    },
+    "Joko Widodo": {
+      "leader": 3,
+      "warm": 2,
+      "smart": 2
+    },
+    "Albert Einstein": {
+      "smart": 3,
+      "gentle": 2,
+      "cautious": 1
+    },
+    "Nikola Tesla": {
+      "smart": 3,
+      "brave": 1,
+      "cautious": 2
+    },
+    "Marie Curie": {
+      "smart": 3,
+      "brave": 2,
+      "gentle": 1
+    },
+    "Adolf Hitler": {
+      "leader": 3,
+      "brave": 1,
+      "smart": 1
+    },
+    "Winston Churchill": {
+      "leader": 3,
+      "brave": 3,
+      "smart": 2
+    },
+    "Mahatma Gandhi": {
+      "gentle": 3,
+      "brave": 2,
+      "leader": 3
+    },
+    "SpongeBob SquarePants": {
+      "warm": 3,
+      "brave": 1,
+      "gentle": 2
+    },
+    "Patrick Star": {
+      "gentle": 2,
+      "warm": 2,
+      "smart": 0
+    },
+    "Boboiboy": {
+      "brave": 3,
+      "smart": 2,
+      "leader": 2
+    },
+    "Gopal": {
+      "smart": 3,
+      "warm": 2,
+      "gentle": 1
+    },
+    "Spiderman": {
+      "brave": 3,
+      "smart": 2,
+      "gentle": 1
+    },
+    "Captain America": {
+      "brave": 3,
+      "leader": 3,
+      "gentle": 1
+    },
+    "Harry Potter": {
+      "brave": 3,
+      "smart": 2,
+      "warm": 2
+    },
+    "Hermione Granger": {
+      "smart": 3,
+      "brave": 2,
+      "gentle": 1
+    },
+    "Naruto Uzumaki": {
+      "brave": 3,
+      "warm": 3,
+      "leader": 2
+    },
+    "Goku": {
+      "brave": 3,
+      "warm": 2,
+      "smart": 1
+    },
+    "Pikachu": {
+      "brave": 2,
+      "gentle": 3,
+      "warm": 2
+    },
+    "RM": {
+      "smart": 3,
+      "leader": 3,
+      "gentle": 2
+    },
+    "Jisoo": {
+      "gentle": 3,
+      "warm": 3,
+      "smart": 1
+    },
+    "James Bond": {
+      "brave": 3,
+      "smart": 2,
+      "leader": 1
+    },
+    "Wonder Woman": {
+      "brave": 3,
+      "leader": 2,
+      "gentle": 1
+    },
+    "Iron Man": {
+      "smart": 3,
+      "brave": 2,
+      "leader": 2
+    },
+    "Nama Karakter": {
+      "brave": 0,
+      "smart": 0,
+      "gentle": 0,
+      "leader": 0,
+      "warm": 0,
+      "cautious": 0
+    },
+    "Contoh Karakter 1": {
+      "brave": 3,
+      "smart": 1,
+      "gentle": 0,
+      "leader": 2,
+      "warm": 1,
+      "cautious": 0
+    },
+    "Contoh Karakter 2": {
+      "brave": 0,
+      "smart": 3,
+      "gentle": 2,
+      "leader": 0,
+      "warm": 2,
+      "cautious": 1
+    },
+    "bryan": {
+      "brave": 0,
+      "smart": 0,
+      "gentle": 0,
+      "leader": 0,
+      "warm": 0,
+      "cautious": 0
+    }
+  },
+  "nameMapping": {
+    "rara": "Phainon",
+    "kirana": "Wriothesley",
+    "galang": "Hina",
+    "radja": "Yae Miko",
+    "bryan": "Clorinde",
+    "bryann": "Robin",
+    "jibra": "J1BR4",
+    "jibar": "Jane Doe"
+  }
 }
 ]
   ,
