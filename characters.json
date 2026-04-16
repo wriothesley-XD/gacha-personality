@@ -1532,7 +1532,7 @@
     {
       "name": "Tighnari",
       "gender": "male",
-      "img": "images/tignari.png",
+      "img": "images/tighnari.png",
       "desc": "Forest Watcher Avidya Forest Sumeru yang ahli botani.",
       "details": "Tighnari adalah karakter playable bintang 5 dalam game Genshin Impact oleh HoYoverse. Ia adalah Forest Watcher dari Avidya Forest di Sumeru yang bertugas menjaga ekosistem hutan. Tighnari menggunakan elemen Dendro dengan senjata Bow. Ia adalah karakter Dendro pertama yang bisa dimainkan di Genshin Impact. Tighnari adalah ahli botani yang sangat kompeten dan sabar dalam mengajar, namun tidak segan-segan menegur orang yang tidak menghormati alam.",
       "words": "Hutan ini bukan sekadar pohon-pohon, ia adalah ekosistem hidup yang harus dijaga.",
@@ -2547,9 +2547,9 @@
     "traits": { "brave": 1, "smart": 3, "gentle": 0, "leader": 1, "warm": 0, "cautious": 3 }
   },
   {
-    "name": "Spy x Family Loid",
+    "name": "Loid",
     "gender": "male",
-    "img": "images/loid_forger.png",
+    "img": "images/loid.png",
     "desc": "Mata-mata top yang membentuk keluarga palsu untuk sebuah misi.",
     "details": "Loid Forger (nama asli: Twilight) adalah protagonis utama dari anime dan manga Spy x Family karya Tatsuya Endo. Ia adalah seorang mata-mata top yang ditugaskan untuk menyusup ke sekolah bergengsi dengan membentuk keluarga palsu. Ia mengadopsi seorang anak perempuan bernama Anya, yang diam-diam adalah seorang telepat, dan menikahi seorang wanita bernama Yor, yang diam-diam adalah seorang pembunuh bayaran. Loid sangat cerdas, terampil dalam berbagai penyamaran dan pertempuran, namun perlahan-lahan ia mulai mengembangkan perasaan tulus terhadap keluarga palsunya.",
     "words": "Ini untuk misi.",
@@ -2568,7 +2568,7 @@
   },{
     "name": "Yuji Itadori",
     "gender": "male",
-    "img": "images/yuji_itadori.png",
+    "img": "images/yuji.png",
     "desc": "Siswa SMA yang menjadi wadah Raja Kutukan Sukuna di Jujutsu Kaisen.",
     "details": "Yuji Itadori adalah protagonis utama dari anime dan manga Jujutsu Kaisen karya Gege Akutami. Ia adalah siswa SMA biasa dengan kekuatan fisik luar biasa yang secara tidak sengaja memakan jari Sukuna, Raja Kutukan, sehingga menjadi wadahnya. Yuji bergabung dengan Tokyo Jujutsu High untuk mengumpulkan semua jari Sukuna dan melindungi orang lain. Ia sangat berempati, berani, dan rela mengorbankan dirinya demi kebaikan orang banyak.",
     "words": "Aku akan memberikan kematian yang layak kepada semua kutukan!",
@@ -2677,7 +2677,7 @@
   {
     "name": "Ling",
     "gender": "male",
-    "img": "images/ling_ml.png",
+    "img": "images/ling1.png",
     "desc": "Assassin pedang angin dari Mobile Legends yang bisa berlari di atas dinding.",
     "details": "Ling adalah hero Assassin dalam game Mobile Legends: Bang Bang (MLBB) oleh Moonton. Ia adalah seorang pendekar pedang dari Cadia Riverlands yang menggunakan teknik 'Tempest of Blades'. Kemampuan uniknya adalah berlari di atas dinding dan bangunan menggunakan energi angin, membuatnya sangat mobile dan sulit ditangkap. Ling adalah hero dengan skill cap tinggi yang sangat populer karena gaya bermainnya yang elegan dan mematikan. Kepribadiannya flamboyan, percaya diri, dan suka tampil gaya.",
     "words": "Angin akan mengantarkanku ke mana pun aku mau.",
@@ -2753,16 +2753,6 @@
     "words": "Primal Thunder, lindungi aku!",
     "sound": "sounds/edith.mp3",
     "traits": { "brave": 2, "smart": 1, "gentle": 2, "leader": 1, "warm": 2, "cautious": 1 }
-  },
-  {
-    "name": "Novaria",
-    "gender": "female",
-    "img": "images/novaria.png",
-    "desc": "Mage bintang dari Mobile Legends dengan kemampuan melihat seluruh peta.",
-    "details": "Novaria adalah hero Mage dalam game Mobile Legends: Bang Bang (MLBB) oleh Moonton. Ia adalah seorang peramal bintang yang bisa melihat seluruh peta dan memberikan visi kepada tim. Skill ultimate-nya memungkinkan ia menembakkan bola energi yang bisa menembus dinding dan memberikan damage serta visi. Novaria adalah salah satu mage support terkuat karena utility-nya yang luar biasa. Kepribadiannya tenang, bijaksana, dan penuh misteri seperti langit malam.",
-    "words": "Bintang-bintang menunjukkan jalannya.",
-    "sound": "sounds/novaria.mp3",
-    "traits": { "brave": 1, "smart": 3, "gentle": 2, "leader": 1, "warm": 1, "cautious": 2 }
   }, {
     "name": "Wanwan",
     "gender": "female",
@@ -2874,7 +2864,7 @@
 }, {
   "name": "Go Youn Jung",
   "gender": "female",
-  "img": "images/go_youn_jung.png",
+  "img": "images/goyounjung.png",
   "desc": "Aktris Korea yang dikenal melalui perannya sebagai Naksu di 'Alchemy of Souls'.",
   "details": "Go Youn Jung adalah aktris asal Korea Selatan yang lahir pada 22 April 1996. Ia memulai debut aktingnya pada tahun 2019 melalui drama 'He Is Psychometric'. Namanya melambung berkat perannya sebagai Naksu, seorang pembunuh bayaran tangguh, dalam drama fantasi 'Alchemy of Souls'. Selain itu, ia juga dikenal lewat perannya sebagai Jang Hui Soo, siswi SMA dengan kekuatan penyembuhan super, dalam drama 'Moving'. Karakter lainnya termasuk Oh Yi Young, seorang dokter residen dengan ekspresi dingin dan bicara terus terang di 'Resident Playbook'.",
   "words": "Aku tidak akan pernah menyerah, apa pun yang terjadi.",
@@ -2969,15 +2959,6 @@
       "details": "Xiao adalah yaksha yang kuat dan pendiam, selalu melindungi Liyue dari bahaya. Ia memiliki masa lalu yang kelam namun selalu setia.",
       "words": "Aku akan melindungi Liyue.",
       "sound": "sounds/xiao.mp3"
-    },
-    {
-      "name": "Hu Tao",
-      "gender": "female",
-      "img": "images/hu_tao.png",
-      "desc": "Direktur Wangsheng Funeral Parlor",
-      "details": "Hu Tao adalah direktur yang energik dan unik, selalu menghibur orang dengan caranya sendiri. Ia memiliki filosofi hidup yang menarik.",
-      "words": "Hidup adalah pesta!",
-      "sound": "sounds/hu_tao.mp3"
     },
     {
       "name": "Ei",
@@ -3261,7 +3242,7 @@
     {
       "name": "Tighnari",
       "gender": "male",
-      "img": "images/tighnari.png",
+      "img": "images/tighnari1.png",
       "desc": "Forest Watcher",
       "details": "Tighnari adalah penjaga hutan yang bijak, selalu melindungi ekosistem.",
       "words": "Hutan adalah hidup.",
@@ -3529,15 +3510,6 @@
       "sound": "sounds/march_7th.mp3"
     },
     {
-      "name": "Dan Heng",
-      "gender": "male",
-      "img": "images/dan_heng.png",
-      "desc": "Pemburu misterius",
-      "details": "Dan Heng adalah pemburu misterius dengan masa lalu yang gelap, selalu melindungi teman-temannya. Ia kuat dan bijaksana.",
-      "words": "Aku akan melindungi.",
-      "sound": "sounds/dan_heng.mp3"
-    },
-    {
       "name": "Welt",
       "gender": "male",
       "img": "images/welt.png",
@@ -3779,42 +3751,6 @@
       "details": "Iron Man adalah Tony Stark, jenius miliarder yang menciptakan baju besi untuk melindungi dunia. Ia adalah anggota Avengers yang sarkastis namun heroik.",
       "words": "Saya adalah Iron Man.",
       "sound": "sounds/iron_man.mp3"
-    },
-    {
-      "name": "Nama Karakter",
-      "gender": "male/female/anomali",
-      "img": "images/nama_file.png",
-      "desc": "Deskripsi singkat karakter",
-      "details": "Deskripsi lengkap karakter yang menjelaskan kepribadian dan latar belakangnya secara detail.",
-      "words": "Kata-kata khas karakter",
-      "sound": "sounds/nama_file.mp3"
-    },
-    {
-      "name": "Contoh Karakter 1",
-      "gender": "male",
-      "img": "images/contoh1.png",
-      "desc": "Pejuang tangguh",
-      "details": "Karakter yang sangat kuat dan selalu melindungi teman-temannya.",
-      "words": "Aku akan melindungimu!",
-      "sound": "sounds/contoh1.mp3"
-    },
-    {
-      "name": "Contoh Karakter 2",
-      "gender": "female",
-      "img": "images/contoh2.png",
-      "desc": "Cewe pintar dan lembut",
-      "details": "Karakter yang sangat cerdas dan selalu membantu orang lain dengan penuh kasih sayang.",
-      "words": "Ayo kita belajar bersama!",
-      "sound": "sounds/contoh2.mp3"
-    },
-    {
-      "name": "bryan",
-      "gender": "anomali",
-      "img": "images/bryan.mp4",
-      "sound": "sounds/bryan.mp3",
-      "desc": "gweh",
-      "details": "gweh",
-      "words": "gweh"
     }
   ],
   "characterTraits": {
@@ -4365,6 +4301,7 @@
     "bryan": "Clorinde",
     "bryann": "Robin",
     "jibra": "J1BR4",
-    "jibar": "Jane Doe"
+    "jibar": "Jane Doe",
+    "zaicy": "Kiana Kaslana"
   }
 }
