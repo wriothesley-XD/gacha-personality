@@ -1027,6 +1027,16 @@ function findBestCharacter() {
         userNorm[t] = Math.min(1, raw / max);
     });
 
+    // RANDOM MODE: pick any character randomly
+    if (gachaMode === 'random') {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        return {
+            character: characters[randomIndex],
+            similarity: null,
+            compatibility: null
+        };
+    }
+
     let bestMatch = null;
     let bestScore = -Infinity;
     let bestSimPerc = 0;
@@ -1034,16 +1044,6 @@ function findBestCharacter() {
 
     characters.forEach(char => {
         const traits = characterTraits[char.name] || {};
-
-        // SESUDAH (benar):
-if (gachaMode === 'random') {
-    const randomIndex = Math.floor(Math.random() * characters.length);
-    return {
-        character: characters[randomIndex],
-        similarity: null,
-        compatibility: null
-    };
-}
 
         // similarity: average of per-trait product (userNorm * charNorm)
         let simSum = 0;
@@ -1072,8 +1072,8 @@ if (gachaMode === 'random') {
 
         // Choose best based on selected mode
         const score = (gachaMode === 'personality') ? similarityPerc : compatibilityPerc;
-        // add slight randomness to break ties
-        const finalScore = score + Math.random() * 3;
+        // add significant randomness to break ties & give variety
+        const finalScore = score + Math.random() * 15;
         if (finalScore > bestScore) {
             bestScore = finalScore;
             bestMatch = char;
