@@ -2435,7 +2435,7 @@
       "details": "Aston Martin DB9 adalah mobil yang sering digunakan oleh James Bond dalam film-filmnya. Mobil ini dikenal dengan desainnya yang elegan dan kinerja yang luar biasa.",
       "words": "...",
       "sound": "sounds/brumbrum.mp3",
-      "traits": { "brave": 67, "smart": 567, "gentle": 67, "leader": 67, "warm": 67, "cautious": 67 }
+      "traits": { "brave": 0, "smart": 0, "gentle": 0, "leader": 0, "warm": 0, "cautious": 0 }
     },
     {
       "name": "Google Play Store",
@@ -2445,7 +2445,7 @@
       "details": "Google Play Store adalah platform distribusi aplikasi resmi untuk sistem operasi Android. Aplikasi yang tersedia di sini telah melalui proses verifikasi dan peninjauan oleh Google.",
       "words": "...",
       "sound": "sounds/brumbrum.mp3",
-      "traits": { "brave": 67, "smart": 567, "gentle": 67, "leader": 67, "warm": 67, "cautious": 67 }
+      "traits": { "brave": 0, "smart": 0, "gentle": 0, "leader": 0, "warm": 0, "cautious": 0 }
     },
     {
       "name": "Beatrix",
@@ -3755,12 +3755,12 @@
   ],
   "characterTraits": {
     "J1BR4": {
-      "brave": 1,
-      "smart": 1,
-      "gentle": 1,
-      "leader": 1,
-      "warm": 1,
-      "cautious": 1
+      "brave": 0,
+      "smart": 0,
+      "gentle": 0,
+      "leader": 0,
+      "warm": 0,
+      "cautious": 0
     },
     "Lumine": {
       "brave": 3,
@@ -4259,38 +4259,6 @@
       "smart": 3,
       "brave": 2,
       "leader": 2
-    },
-    "Nama Karakter": {
-      "brave": 0,
-      "smart": 0,
-      "gentle": 0,
-      "leader": 0,
-      "warm": 0,
-      "cautious": 0
-    },
-    "Contoh Karakter 1": {
-      "brave": 3,
-      "smart": 1,
-      "gentle": 0,
-      "leader": 2,
-      "warm": 1,
-      "cautious": 0
-    },
-    "Contoh Karakter 2": {
-      "brave": 0,
-      "smart": 3,
-      "gentle": 2,
-      "leader": 0,
-      "warm": 2,
-      "cautious": 1
-    },
-    "bryan": {
-      "brave": 0,
-      "smart": 0,
-      "gentle": 0,
-      "leader": 0,
-      "warm": 0,
-      "cautious": 0
     }
   },
   "nameMapping": {
@@ -4302,6 +4270,8 @@
     "bryann": "Robin",
     "jibra": "J1BR4",
     "jibar": "Jane Doe",
-    "zaicy": "Kiana Kaslana"
+    "zaicy": "Kiana Kaslana",
+    "faiz": "Aston Martin DB9",
+    "ravael": "Wanwan"
   }
 }

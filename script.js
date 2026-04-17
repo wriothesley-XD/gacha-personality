@@ -506,6 +506,9 @@ function startRandomGacha(mode) {
     }
     if (messageEl) messageEl.textContent = '';
 
+    // Suara klik tombol Gacha Acak
+    try { new Audio('sounds/click.mp3').play().catch(()=>{}); } catch(e) {}
+
     // allow caller to set mode (compatibility/personality/random)
     gachaMode = mode || 'random';
     document.getElementById("home").classList.add("hidden");
@@ -518,6 +521,9 @@ function startQuiz(mode) {
         alert("Isi nama dulu ya!");
         return;
     }
+
+    // Suara klik tombol Kamu Mirip Siapa
+    try { new Audio('sounds/click.mp3').play().catch(()=>{}); } catch(e) {}
 
     gachaMode = mode;
     document.getElementById("home").classList.add("hidden");
@@ -532,7 +538,7 @@ function startQuiz(mode) {
 function displayQuestion() {
     const quizContent = document.getElementById("quizContent");
     const q = quizQuestions[currentQuestion];
-    const modeTitle = gachaMode === "personality" ? "🔍 Kamu Mirip Siapa?" : "💕 Pasangan Mu?";
+    const modeTitle = "🔍 Kamu Mirip Siapa?";
 
     let html = `
         <div class="quiz-mode-title">${modeTitle}</div>
@@ -871,7 +877,9 @@ localStorage.setItem('gachaStats', JSON.stringify(gachaStats));
         </div>
     `;
 
-        const soundEffect = new Audio("sounds/pop.mp3");
+        // Putar suara selamat sekali saat hasil pertama muncul
+        try { new Audio('sounds/selamat.mp3').play().catch(()=>{}); } catch(e) {}
+
         function revealEl(id, delay) {
             setTimeout(() => {
                 const el = document.getElementById(id);
@@ -879,7 +887,6 @@ localStorage.setItem('gachaStats', JSON.stringify(gachaStats));
                 el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                 el.style.opacity = 1;
                 el.style.transform = 'translateY(0)';
-                soundEffect.cloneNode().play().catch(()=>{});
             }, delay);
         }
         revealEl('desc', 300);
@@ -1029,7 +1036,7 @@ if (gachaMode === 'random') {
                 simCount++;
             }
         });
-        const similarityPerc = simCount ? (simSum / simCount) * 100 : 0;
+        const similarityPerc = simCount ? Math.round((simSum / simCount) * 50) + 50 : 50;
 
         // compatibility: average of complement distance: 1 - |userNorm - charNorm|
         let compSum = 0;
@@ -1041,7 +1048,7 @@ if (gachaMode === 'random') {
                 compCount++;
             }
         });
-        const compatibilityPerc = compCount ? (compSum / compCount) * 100 : 0;
+        const compatibilityPerc = compCount ? Math.round((compSum / compCount) * 50) + 50 : 50;
 
         // Choose best based on selected mode
         const score = (gachaMode === 'personality') ? similarityPerc : compatibilityPerc;
@@ -1072,153 +1079,153 @@ const nameMapping = {};
 
 const quizQuestions = [
     {
-        question: "Ketika ada masalah besar, kamu cenderung...",
+        question: "Saat menghadapi tantangan besar, kamu cenderung...",
         answers: [
-            { text: "Menghadapinya dengan berani", traits: { brave: 2 } },
-            { text: "Berpikir strategis dulu", traits: { smart: 2 } },
-            { text: "Mencari bantuan teman", traits: { warm: 2 } },
-            { text: "Menunggu dan melihat situasi", traits: { cautious: 2 } },
-            { text: "Memimpin dan ambil kendali", traits: { leader: 2 } }
+            { text: "Melangkah maju tanpa ragu", traits: { brave: 2 } },
+            { text: "Merencanakan strategi terlebih dahulu", traits: { smart: 2 } },
+            { text: "Meminta saran dari orang terpercaya", traits: { warm: 2 } },
+            { text: "Bersikap hati-hati dan waspada", traits: { cautious: 2 } },
+            { text: "Mengambil alih dan memimpin", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Dalam kelompok, peran kamu biasanya...",
+        question: "Di antara kelompok teman, posisi kamu biasanya...",
         answers: [
-            { text: "Pemimpin yang inisiatif", traits: { leader: 2 } },
-            { text: "Anggota setia pendukung", traits: { warm: 2 } },
-            { text: "Pemikir yang analitis", traits: { smart: 2 } },
-            { text: "Penjaga yang berhati-hati", traits: { cautious: 2 } },
-            { text: "Pemberani garis depan", traits: { brave: 2 } }
+            { text: "Sebagai yang memimpin", traits: { leader: 2 } },
+            { text: "Sebagai pendengar setia", traits: { warm: 2 } },
+            { text: "Sebagai yang berpikir matang", traits: { smart: 2 } },
+            { text: "Sebagai pengamat yang hati-hati", traits: { cautious: 2 } },
+            { text: "Sebagai yang paling berani", traits: { brave: 2 } }
         ]
     },
     {
-        question: "Ketika berhadapan dengan ketidakadilan...",
+        question: "Ketika melihat kesalahan atau ketidakadilan...",
         answers: [
-            { text: "Langsung melawan keras", traits: { brave: 2 } },
-            { text: "Cari solusi bijaksana", traits: { smart: 2 } },
-            { text: "Merasa sangat tersentuh", traits: { gentle: 2 } },
-            { text: "Tunggu waktu yang tepat", traits: { cautious: 2 } },
-            { text: "Gerakkan orang lain", traits: { leader: 2 } }
+            { text: "Langsung menyuarakan protes", traits: { brave: 2 } },
+            { text: "Mencari solusi yang masuk akal", traits: { smart: 2 } },
+            { text: "Merasakan empati mendalam", traits: { gentle: 2 } },
+            { text: "Menunggu waktu yang tepat untuk bertindak", traits: { cautious: 2 } },
+            { text: "Menggerakkan orang lain untuk berubah", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Bagaimana kamu mengatasi stres?",
+        question: "Cara terbaik untuk mengatasi stress adalah...",
         answers: [
-            { text: "Hadapi secara langsung", traits: { brave: 2 } },
-            { text: "Cari cara yang logis", traits: { smart: 2 } },
-            { text: "Bersama orang terkasih", traits: { warm: 2 } },
-            { text: "Berdiam diri merenung", traits: { cautious: 2 } },
-            { text: "Lakukan sesuatu produktif", traits: { leader: 2 } }
+            { text: "Melakukan aktivitas yang menantang", traits: { brave: 2 } },
+            { text: "Menganalisa penyebabnya secara mendalam", traits: { smart: 2 } },
+            { text: "Berkumpul dengan orang yang dicintai", traits: { warm: 2 } },
+            { text: "Merenung dan mencari ketenangan", traits: { cautious: 2 } },
+            { text: "Fokus pada hal produktif", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Dalam situasi darurat, kamu...",
+        question: "Ketika terjadi situasi mendesak, kamu...",
         answers: [
-            { text: "Ambil tanggung jawab", traits: { leader: 2 } },
-            { text: "Berpikir jernih dan cepat", traits: { smart: 2 } },
-            { text: "Dukung orang lain", traits: { gentle: 2 } },
-            { text: "Ikuti arahan dengan hati-hati", traits: { cautious: 2 } },
-            { text: "Terjun langsung tanpa pikir", traits: { brave: 2 } }
+            { text: "Mengambil peran sebagai pemimpin", traits: { leader: 2 } },
+            { text: "Berpikir jernih dan bertindak cepat", traits: { smart: 2 } },
+            { text: "Membantu dan mendukung orang lain", traits: { gentle: 2 } },
+            { text: "Bersikap hati-hati dan mengikuti panduan", traits: { cautious: 2 } },
+            { text: "Langsung terlibat tanpa rasa takut", traits: { brave: 2 } }
         ]
     },
     {
-        question: "Apa yang paling kamu hargai dalam hidup?",
+        question: "Hal yang paling berharga dalam hidup kamu adalah...",
         answers: [
-            { text: "Keberanian dan tantangan", traits: { brave: 2 } },
-            { text: "Pengetahuan dan pemahaman", traits: { smart: 2 } },
-            { text: "Cinta dan kehangatan", traits: { warm: 2 } },
-            { text: "Kedamaian dan keamanan", traits: { cautious: 2 } },
-            { text: "Pengaruh dan kepemimpinan", traits: { leader: 2 } }
+            { text: "Petualangan dan tantangan hidup", traits: { brave: 2 } },
+            { text: "Ilmu pengetahuan dan pemahaman", traits: { smart: 2 } },
+            { text: "Hubungan dan kasih sayang", traits: { warm: 2 } },
+            { text: "Ketenangan dan rasa aman", traits: { cautious: 2 } },
+            { text: "Kemampuan mempengaruhi orang lain", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Teman-teman menggambarkanmu sebagai...",
+        question: "Teman-temanmu menganggapmu sebagai seseorang yang...",
         answers: [
-            { text: "Pemberani dan nekat", traits: { brave: 2 } },
-            { text: "Cerdas dan analitis", traits: { smart: 2 } },
+            { text: "Berani mengambil risiko", traits: { brave: 2 } },
+            { text: "Cerdas dan logis", traits: { smart: 2 } },
             { text: "Lembut dan perhatian", traits: { gentle: 2 } },
             { text: "Hangat dan ramah", traits: { warm: 2 } },
-            { text: "Tegas dan berwibawa", traits: { leader: 2 } }
+            { text: "Tegas dan berpengaruh", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Saat menghadapi keputusan sulit...",
+        question: "Menghadapi pilihan yang sulit, kamu biasanya...",
         answers: [
-            { text: "Ikuti insting saja", traits: { brave: 2 } },
-            { text: "Analisa semua opsi", traits: { smart: 2 } },
-            { text: "Tanya pendapat orang lain", traits: { gentle: 2 } },
-            { text: "Pertimbangkan risikonya", traits: { cautious: 2 } },
-            { text: "Putuskan dengan tegas", traits: { leader: 2 } }
+            { text: "Mengandalkan intuisi dan perasaan", traits: { brave: 2 } },
+            { text: "Menganalisa setiap kemungkinan", traits: { smart: 2 } },
+            { text: "Mendengarkan pendapat orang lain", traits: { gentle: 2 } },
+            { text: "Mempertimbangkan risiko dengan cermat", traits: { cautious: 2 } },
+            { text: "Memutuskan dengan percaya diri", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Gaya hidupmu yang ideal adalah...",
+        question: "Gaya hidup impianmu adalah...",
         answers: [
-            { text: "Penuh petualangan dan aksi", traits: { brave: 2 } },
-            { text: "Terstruktur dan terukur", traits: { smart: 2 } },
-            { text: "Tenang dan menyenangkan", traits: { warm: 2 } },
-            { text: "Aman dan terhindar konflik", traits: { cautious: 2 } },
-            { text: "Memimpin dan berpengaruh", traits: { leader: 2 } }
+            { text: "Penuh petualangan dan kegembiraan", traits: { brave: 2 } },
+            { text: "Terorganisir dan penuh makna", traits: { smart: 2 } },
+            { text: "Damai dan menyenangkan", traits: { warm: 2 } },
+            { text: "Stabil dan bebas dari konflik", traits: { cautious: 2 } },
+            { text: "Berpengaruh dan bermakna", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Kamu lebih suka...",
+        question: "Dalam menghabiskan waktu luang, kamu lebih menyukai...",
         answers: [
-            { text: "Olahraga ekstrem", traits: { brave: 2 } },
-            { text: "Membaca dan belajar", traits: { smart: 2 } },
-            { text: "Merawat orang lain", traits: { gentle: 2 } },
-            { text: "Berkumpul bersama teman", traits: { warm: 2 } },
-            { text: "Memimpin sebuah proyek", traits: { leader: 2 } }
+            { text: "Aktivitas yang menantang", traits: { brave: 2 } },
+            { text: "Belajar hal-hal baru", traits: { smart: 2 } },
+            { text: "Membantu dan merawat orang lain", traits: { gentle: 2 } },
+            { text: "Berkumpul dengan teman-teman", traits: { warm: 2 } },
+            { text: "Memimpin atau mengelola proyek", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Ketika bertemu orang baru...",
+        question: "Ketika bertemu seseorang untuk pertama kali, kamu...",
         answers: [
-            { text: "Langsung akrab dan berani", traits: { brave: 2 } },
-            { text: "Amati dulu sebelum bicara", traits: { smart: 2 } },
-            { text: "Dengarkan mereka baik-baik", traits: { gentle: 2 } },
-            { text: "Ramah dan hangat", traits: { warm: 2 } },
-            { text: "Ambil inisiatif kenalan", traits: { leader: 2 } }
+            { text: "Langsung bersikap ramah dan percaya diri", traits: { brave: 2 } },
+            { text: "Mengamati dulu sebelum berbicara", traits: { smart: 2 } },
+            { text: "Mendengarkan dengan penuh perhatian", traits: { gentle: 2 } },
+            { text: "Bersikap hangat dan menyenangkan", traits: { warm: 2 } },
+            { text: "Mengambil inisiatif untuk mengenal", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Kekuatan terbesar kamu adalah...",
+        question: "Kekuatan terbesar dirimu terletak pada...",
         answers: [
-            { text: "Keberanian tanpa batas", traits: { brave: 2 } },
-            { text: "Kecerdasan dan logika", traits: { smart: 2 } },
-            { text: "Empati yang dalam", traits: { gentle: 2 } },
-            { text: "Kehati-hatian dan ketelitian", traits: { cautious: 2 } },
-            { text: "Kemampuan memimpin", traits: { leader: 2 } }
+            { text: "Keberanian menghadapi apapun", traits: { brave: 2 } },
+            { text: "Kemampuan berpikir kritis", traits: { smart: 2 } },
+            { text: "Kepedulian dan empati", traits: { gentle: 2 } },
+            { text: "Perhatian terhadap detail", traits: { cautious: 2 } },
+            { text: "Bakat memimpin dan menginspirasi", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Saat timmu gagal, kamu...",
+        question: "Saat tim atau grup mengalami kegagalan, kamu...",
         answers: [
-            { text: "Bangkit dan coba lagi", traits: { brave: 2 } },
-            { text: "Analisa apa yang salah", traits: { smart: 2 } },
-            { text: "Hibur anggota tim", traits: { gentle: 2 } },
-            { text: "Evaluasi dan berhati-hati", traits: { cautious: 2 } },
-            { text: "Motivasi tim untuk maju", traits: { leader: 2 } }
+            { text: "Semangat lagi dan coba cara baru", traits: { brave: 2 } },
+            { text: "Menganalisa kesalahan yang terjadi", traits: { smart: 2 } },
+            { text: "Memberikan dukungan moral kepada semua", traits: { gentle: 2 } },
+            { text: "Evaluasi dan rencanakan dengan matang", traits: { cautious: 2 } },
+            { text: "Memotivasi semua untuk bangkit kembali", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Menurutmu, pahlawan sejati adalah...",
+        question: "Menurutmu, pahlawan sejati adalah orang yang...",
         answers: [
-            { text: "Yang berani tanpa takut", traits: { brave: 2 } },
-            { text: "Yang paling cerdas", traits: { smart: 2 } },
-            { text: "Yang paling penyayang", traits: { gentle: 2 } },
-            { text: "Yang bijaksana dan hati-hati", traits: { cautious: 2 } },
-            { text: "Yang memimpin dengan baik", traits: { leader: 2 } }
+            { text: "Berani menghadapi bahaya", traits: { brave: 2 } },
+            { text: "Bijaksana dan cerdas", traits: { smart: 2 } },
+            { text: "Penuh kasih sayang", traits: { gentle: 2 } },
+            { text: "Hati-hati dan penuh pertimbangan", traits: { cautious: 2 } },
+            { text: "Dapat memimpin dengan baik", traits: { leader: 2 } }
         ]
     },
     {
-        question: "Apa motivasi terbesarmu?",
+        question: "Hal yang memotivasi kamu paling besar adalah...",
         answers: [
-            { text: "Membuktikan diri", traits: { brave: 2 } },
-            { text: "Mencari kebenaran", traits: { smart: 2 } },
-            { text: "Menjaga orang tersayang", traits: { gentle: 2 } },
-            { text: "Menciptakan kedamaian", traits: { cautious: 2 } },
-            { text: "Membuat perubahan besar", traits: { leader: 2 } }
+            { text: "Ingin membuktikan kemampuan diri", traits: { brave: 2 } },
+            { text: "Ingin menemukan kebenaran", traits: { smart: 2 } },
+            { text: "Ingin melindungi orang terkasih", traits: { gentle: 2 } },
+            { text: "Ingin menciptakan kedamaian", traits: { cautious: 2 } },
+            { text: "Ingin membuat perubahan besar", traits: { leader: 2 } }
         ]
     }
 ];
@@ -1229,6 +1236,11 @@ const quizQuestions = [
 // ============ ADMIN FUNCTIONS & UI MANAGEMENT ============
 
 function openAdmin() {
+    const password = prompt('Masukkan password admin:');
+    if (password !== 'smansakarbit2026') {
+        alert('Password salah!');
+        return;
+    }
     document.getElementById("home").classList.add("hidden");
     document.getElementById("adminPanel").classList.remove("hidden");
     switchAdminTab('add');
