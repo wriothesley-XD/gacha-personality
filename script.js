@@ -75,7 +75,9 @@ function saveCustomBackground(dataUrl) {
 
 // --- ATTRACT SCREEN (Layar Idle) ---
 let idleTimer = null;
+let coinSoundInterval = null;
 const IDLE_TIMEOUT = 20000; // 20 detik tidak ada aktivitas
+const COIN_SOUND_INTERVAL = 45000; // 45 detik untuk suara coin
 
 function resetIdleTimer() {
     clearTimeout(idleTimer);
@@ -91,15 +93,33 @@ function showAttractScreen() {
     }
     document.getElementById('attractScreen').classList.remove('hidden');
     startAttractAnimation();
+    startCoinSound();
 }
 
 function hideAttractScreen() {
     document.getElementById('attractScreen').classList.add('hidden');
     stopAttractAnimation();
+    stopCoinSound();
     resetIdleTimer();
     // Fokus ke input nama
     const inp = document.getElementById('username');
     if (inp) { inp.focus(); inp.select(); }
+}
+
+function startCoinSound() {
+    if (coinSoundInterval) clearInterval(coinSoundInterval);
+    coinSoundInterval = setInterval(() => {
+        const audio = new Audio('sounds/coin.mp3');
+        audio.volume = 0.5;
+        audio.play().catch(() => {});
+    }, COIN_SOUND_INTERVAL);
+}
+
+function stopCoinSound() {
+    if (coinSoundInterval) {
+        clearInterval(coinSoundInterval);
+        coinSoundInterval = null;
+    }
 }
 
 let attractAnimFrame = null;

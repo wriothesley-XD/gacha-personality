@@ -2455,7 +2455,7 @@
       "details": "Beatrix adalah hero dalam game Mobile Legends: Bang Bang yang dikenal dengan kemampuannya dalam menembak dengan berbagai jenis senjata api.",
       "words": "...",
       "sound": "sounds/brumbrum.mp3",
-      "traits": { "brave": 67, "smart": 567, "gentle": 67, "leader": 67, "warm": 67, "cautious": 67 }
+      "traits": { "brave": 0, "smart": 0, "gentle": 0, "leader": 0, "warm": 0, "cautious": 0 }
     },
     {
       "name": "Sakurajima Mai",
@@ -2465,7 +2465,7 @@
       "details": "ga nanya",
       "words": "...",
       "sound": "sounds/brumbrum.mp3",
-      "traits": { "brave": 67, "smart": 567, "gentle": 67, "leader": 67, "warm": 67, "cautious": 67 }
+      "traits": { "brave":0, "smart": 0, "gentle": 0, "leader": 0, "warm": 0, "cautious": 0 }
     }, {
     "name": "Gojo Satoru",
     "gender": "male",
