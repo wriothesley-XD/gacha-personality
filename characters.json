@@ -174,8 +174,8 @@
       "name": "Nana",
       "gender": "female",
       "img": "images/nana.png",
-      "desc": "Mage/Support kucing ajaib yang menggemaskan.",
-      "details": "Nana adalah hero Mage/Support dalam game Mobile Legends: Bang Bang (MLBB) oleh Moonton. Ia adalah kucing ajaib dari dunia lain yang datang ke Land of Dawn. Kemampuan uniknya adalah mengubah musuh menjadi hewan kecil menggunakan sihir Molina. Nana adalah salah satu hero tertua dan paling populer di MLBB, terutama di kalangan pemain baru karena mudah dimainkan namun tetap efektif. Ia memiliki kepribadian yang ceria dan polos.",
+      "desc": "Mage kucing ajaib yang menggemaskan.",
+      "details": "Nana adalah hero Mage dalam game Mobile Legends: Bang Bang (MLBB) oleh Moonton. Ia adalah kucing ajaib dari dunia lain yang datang ke Land of Dawn. Kemampuan uniknya adalah mengubah musuh menjadi hewan kecil menggunakan sihir Molina. Nana adalah salah satu hero tertua dan paling populer di MLBB, terutama di kalangan pemain baru karena mudah dimainkan namun tetap efektif. Ia memiliki kepribadian yang ceria dan polos.",
       "words": "Molina akan mengubahmu menjadi kucing imut!",
       "sound": "sounds/ml_nana.mp3",
       "traits": {
@@ -1483,7 +1483,7 @@
       "name": "Fugue",
       "gender": "female",
       "img": "images/fugue.png",
-      "desc": "Stellaron Hunter misterius dengan kekuatan api.",
+      "desc": "Rubah yang dihidupkan kembali oleh ruanmei.",
       "details": "Fugue adalah karakter playable bintang 5 dalam game Honkai: Star Rail oleh HoYoverse. Ia adalah anggota Stellaron Hunters dengan identitas dan latar belakang yang masih sangat misterius. Fugue mengikuti Path of Nihility dan menggunakan elemen Fire. Ia memiliki hubungan dengan elemen api yang sangat erat. Kepribadiannya tenang dan misterius, jarang mengungkapkan terlalu banyak tentang dirinya sendiri.",
       "words": "Api hanya membakar apa yang sudah siap untuk berubah.",
       "sound": "sounds/fugue.mp3",
@@ -1568,9 +1568,9 @@
       "name": "Cyrene",
       "gender": "female",
       "img": "images/cyrene.png",
-      "desc": "Karakter Genshin Impact.",
-      "details": "Cyrene adalah karakter dalam game Genshin Impact oleh HoYoverse. Detail lebih lanjut tentang karakter ini dapat ditemukan di Genshin Impact Wiki.",
-      "words": "Perjalanan ini baru saja dimulai.",
+      "desc": "Emanator of remembrance.",
+      "details": "Cyrene adalah entitas PhiLia093 yang bertugas merekam kenangan di planet Amphoreus. Awalnya menyamar sebagai Memosprite bernama Mem, ia berevolusi menjadi sosok penuh empati. Cyrene akhirnya memilih membantu kru Astral Express memutus siklus kehancuran abadi Amphoreus, mengorbankan eksistensinya demi masa depan peradaban yang lebih cerah dan penuh harapan.",
+      "words": "Hancurkan kehancuran, denganku.",
       "sound": "sounds/cyrene.mp3",
       "traits": {
         "brave": 2,
@@ -1602,7 +1602,7 @@
       "name": "Vivian",
       "gender": "female",
       "img": "images/vivian.png",
-      "desc": "Karakter Zenless Zone Zero.",
+      "desc": "Fanatik MC Zenless Zone Zero.",
       "details": "Vivian adalah karakter playable dalam game Zenless Zone Zero oleh HoYoverse. Detail lebih lanjut tentang karakter ini dapat ditemukan di Zenless Zone Zero Wiki resmi HoYoverse.",
       "words": "New Eridu adalah kota yang penuh kejutan.",
       "sound": "sounds/vivian.mp3",
@@ -1636,8 +1636,8 @@
       "name": "Hina",
       "gender": "female",
       "img": "images/hina.png",
-      "desc": "Karakter Zenless Zone Zero.",
-      "details": "Hina adalah karakter dalam game Zenless Zone Zero oleh HoYoverse. Detail lebih lanjut tentang karakter ini dapat ditemukan di Zenless Zone Zero Wiki resmi.",
+      "desc": "Karakter BA yang selalu sibuk dengan pekerjaanya.",
+      "details": "Hina adalah karakter dalam game Blue Archive. Dia adalah Ketua Komite Disiplin (Head of the Prefect Team) dari Akademi Gehenna. Hina adalah sosok yang sangat ditakuti sekaligus dihormati. Di sekolah Gehenna yang penuh dengan murid-murid bermasalah dan pembuat onar, Hina adalah satu-satunya alasan mengapa sekolah tersebut tidak hancur total. Dia bekerja hampir 24 jam sehari untuk membereskan kekacauan.",
       "words": "Aku bisa melakukan ini sendiri.",
       "sound": "sounds/hina.mp3",
       "traits": {
@@ -1653,9 +1653,9 @@
       "name": "Cerydra",
       "gender": "female",
       "img": "images/cerydra.png",
-      "desc": "Karakter Genshin Impact.",
-      "details": "Cerydra adalah karakter dalam game Genshin Impact oleh HoYoverse. Detail lebih lanjut tentang karakter ini dapat ditemukan di Genshin Impact Wiki resmi.",
-      "words": "Bersama kita bisa melewati ini.",
+      "desc": "Pemegang benih api keadilan.",
+      "details": "Keadilan tidak bisa ditegakkan dalam kegelapan. Api memberikan cahaya yang mengungkap segala sesuatu yang tersembunyi. Sebagai pemegang Law, Cerydra adalah yang menerangi jalan bagi rakyatnya. Tanpa api keadilan, peradaban akan tersesat dalam kegelapan kekacauan dan ketidakteraturan.",
+      "words": "Veni, vidi, vici.",
       "sound": "sounds/cerydra.mp3",
       "traits": {
         "brave": 2,
@@ -1670,8 +1670,8 @@
       "name": "Hysilens",
       "gender": "female",
       "img": "images/hysilens.png",
-      "desc": "Karakter Genshin Impact.",
-      "details": "Hysilens adalah karakter dalam game Genshin Impact oleh HoYoverse. Detail lebih lanjut tentang karakter ini dapat ditemukan di Genshin Impact Wiki resmi.",
+      "desc": "Chrysos Heirs yang tinggal di lautan.",
+      "details": "Hysilen adalah sosok agung dari faksi Chrysos Heirs yang menjabat sebagai penjaga tatanan tertinggi di planet Amphoreus. Sebagai pewaris kekuatan kuno, ia memikul tanggung jawab berat untuk melindungi sisa-sisa peradaban dari siklus kehancuran sistematis yang menghantui dunianya selama berabad-abad.",
       "words": "Aku akan selalu berdiri di sampingmu.",
       "sound": "sounds/hysilens.mp3",
       "traits": {
@@ -2209,10 +2209,27 @@
         "warm": 3,
         "cautious": 1
       }
+    }, 
+    {
+      "name": "Twynceaa",
+      "gender": "female",
+      "img": "images/queen.png",
+      "desc": "peka dan penuh empati.",
+      "details": "ceria, romantis tapi rasional, empatik, sayang dengan diam-diam.",
+      "words": "fall once, rise smarte.",
+      "sound": "sounds/queen.mp3",
+      "traits": {
+        "brave": 1,
+        "smart": 2,
+        "gentle": 3,
+        "leader": 1,
+        "warm": 3,
+        "cautious": 1
+      }
     },
     {
       "name": "Shamane",
-      "gender": "female",
+      "gender": "male",
       "img": "images/shamane.png",
       "desc": "Arcanist dukun dari Reverse: 1999.",
       "details": "Shamane adalah karakter playable dalam game Reverse: 1999 oleh Bluepoch. Ia adalah Arcanist dengan tema dukun atau shaman — sosok yang berhubungan dengan roh dan kekuatan supranatural. Shamane menggunakan kekuatan roh dalam pertempurannya. Kepribadiannya mistis dan terkadang sulit dipahami, namun memiliki pengetahuan yang dalam tentang hal-hal supranatural.",
@@ -2826,7 +2843,7 @@
       "name": "Rappa",
       "gender": "female",
       "img": "images/rappa.png",
-      "desc": "Ninja dari Xianzhou yang mencintai permainan ninja.",
+      "desc": "Fanatisme yang mencintai permainan ninja.",
       "details": "Rappa adalah karakter playable bintang 5 dalam game Honkai: Star Rail oleh HoYoverse. Ia adalah ninja eksentrik dari Xianzhou yang sangat terobsesi dengan konsep 'ninja' dan ingin menjadi ninja terhebat. Rappa mengikuti Path of Erudition dan menggunakan elemen Imaginary. Ia memiliki kepribadian yang sangat ceria dan suka berpose dramatis seperti ninja di cerita fiksi. Di balik keeksentrikannya, ia adalah pejuang yang sangat kuat.",
       "words": "Ninja sejati tidak pernah terlihat... tapi aku ingin semua orang melihatku!",
       "sound": "sounds/rappa.mp3",
@@ -2894,8 +2911,8 @@
       "name": "Zhezhi",
       "gender": "female",
       "img": "images/zhezhi.png",
-      "desc": "Seniman tinta Xianzhou yang karya-karyanya menjadi hidup.",
-      "details": "Zhezhi adalah karakter playable bintang 5 dalam game Wuthering Waves oleh Kuro Games. Ia adalah seniman dari Xianzhou yang memiliki kemampuan unik untuk menghidupkan lukisannya. Zhezhi menggunakan elemen Havoc dengan senjata Rectifier. Ia adalah sosok yang sangat artistik dan memandang dunia melalui mata seorang seniman. Karya-karyanya bukan hanya indah secara visual tetapi juga memiliki kekuatan nyata.",
+      "desc": "Seniman tinta Jinzhou yang karya-karyanya menjadi hidup.",
+      "details": "Zhezhi adalah karakter playable bintang 5 dalam game Wuthering Waves oleh Kuro Games. Ia adalah seniman dari Jinzhou yang memiliki kemampuan unik untuk menghidupkan lukisannya. Ia adalah sosok yang sangat artistik dan memandang dunia melalui mata seorang seniman. Karya-karyanya bukan hanya indah secara visual tetapi juga memiliki kekuatan nyata.",
       "words": "Setiap goresan kuas menceritakan sebuah kehidupan.",
       "sound": "sounds/zhezhi_ww.mp3",
       "traits": {
@@ -2928,7 +2945,7 @@
       "name": "Roccia",
       "gender": "female",
       "img": "images/roccia.png",
-      "desc": "Pemimpin ceria Montelli Family dari Wuthering Waves.",
+      "desc": "Montelli Family dari Wuthering Waves.",
       "details": "Roccia adalah karakter playable bintang 5 dalam game Wuthering Waves oleh Kuro Games. Ia adalah pemimpin dari Montelli Family dan menggunakan elemen Havoc dengan senjata Gauntlet. Roccia adalah sosok yang sangat ceria dan penuh energi, selalu antusias dalam setiap aktivitas yang ia lakukan. Ia memiliki kemampuan support yang kuat dan memberikan buff serangan kepada rekan setimnya.",
       "words": "Montelli Family tidak pernah melakukan sesuatu dengan setengah-setengah!",
       "sound": "sounds/roccia_ww.mp3",
@@ -2996,7 +3013,7 @@
       "name": "Kakania",
       "gender": "female",
       "img": "images/kakania.png",
-      "desc": "Arcanist pelindung dari Reverse: 1999 dengan aura kerajaan.",
+      "desc": "Arcanist healer dari Reverse: 1999 dengan aura kerajaan.",
       "details": "Kakania adalah karakter playable bintang 6 dalam game Reverse: 1999 oleh Bluepoch. Namanya terinspirasi dari Kekaisaran Austro-Hungaria (K.u.K. atau Kakania). Ia adalah Arcanist defender yang sangat kuat dengan aura kerajaan. Kakania adalah tank terkuat dalam meta Reverse: 1999 dan dikenal dengan kemampuan absorb damage yang luar biasa.",
       "words": "Kerajaan ini harus dilindungi dengan jiwa dan ragaku.",
       "sound": "sounds/kakania_r1999.mp3",
@@ -3098,9 +3115,9 @@
       "name": "Evernight",
       "gender": "female",
       "img": "images/evernight.png",
-      "desc": "Karakter dari Wuthering Waves.",
-      "details": "Evernight adalah karakter dalam game Wuthering Waves oleh Kuro Games. Detail lebih lanjut tentang karakter ini dapat ditemukan di Wuthering Waves Wiki resmi Kuro Games.",
-      "words": "Malam abadi menjadi saksi kekuatanku.",
+      "desc": "Tamu Asing Misterius.",
+      "details": "Evernight adalah karakter yang dapat dimainkan di Honkai: Star Rail. Di Zona Memori yang terpencil, cahaya lilin memancarkan gema masa lalu, dengan lembut memudar dalam kabut. Setiap malam, anak Ingatan yang lahir dari bayang-bayang, Pewaris Chrysos yang menyembunyikan Inti Api Waktu, Anda akan menggerakkan gelombang Oblivion, menjaga keinginan jiwa cermin.",
+      "words": "Tertidur lah di malam yang abadi.",
       "sound": "sounds/evernight.mp3",
       "traits": {
         "brave": 3,
@@ -3642,7 +3659,7 @@
       "name": "Sparkle",
       "gender": "female",
       "img": "images/sparkle.png",
-      "desc": "Stellaron Hunter yang eksentrik dan terobsesi dengan pertunjukan.",
+      "desc": "Masked Fools yang eksentrik dan terobsesi dengan pertunjukan.",
       "details": "Sparkle adalah karakter playable bintang 5 dalam game Honkai: Star Rail oleh HoYoverse. Ia adalah anggota Stellaron Hunters yang memiliki kepribadian sangat eksentrik dan teatrikal. Sparkle mengikuti Path of Harmony dan menggunakan elemen Quantum. Ia sangat terobsesi dengan 'pertunjukan' dan menganggap seluruh hidupnya sebagai panggung sandiwara. Di balik keeksentrikannya, ia adalah support yang luar biasa kuat karena bisa mengisi Skill Point dan memberikan buff besar.",
       "words": "Hidup ini hanyalah pertunjukan, dan aku adalah bintang utamanya!",
       "sound": "sounds/sparkle.mp3",
@@ -4116,7 +4133,7 @@
     },
     {
       "name": "Durin",
-      "gender": "anomali",
+      "gender": "male",
       "img": "images/durin.png",
       "desc": "Naga hitam ciptaan Rhinedottir dari Genshin Impact.",
       "details": "Durin adalah naga hitam yang diciptakan oleh alchemist legendaris Rhinedottir — guru dari Albedo. Durin adalah makhluk buatan yang tidak memiliki jiwa sejati, diciptakan dengan tujuan yang masih misterius. Ia bertarung melawan Dvalin (Stormterror) dan diperkirakan telah mati, namun racunnya masih mengalir di Stormterror's Lair. Durin adalah salah satu bagian terdalam dari lore Genshin Impact yang berkaitan dengan Khaenri'ah.",
@@ -5781,7 +5798,7 @@
     {
       "name": "Kiperina",
       "gender": "female",
-      "img": "images/kiperina.png",
+      "img": "images/a.png",
       "desc": "Arcanist badai petir dari Reverse: 1999 dengan kepribadian yang keras dan tegas.",
       "details": "Kiperina adalah karakter playable bintang 6 dalam game Reverse: 1999 oleh Bluepoch. Namanya kemungkinan terinspirasi dari kata Rusia atau nama diri yang berkaitan dengan tema badai dan kilat. Ia adalah Arcanist dengan kekuatan elemen petir yang sangat besar. Kepribadiannya keras, langsung, dan tidak suka basa-basi — ia berbicara apa adanya dan bertindak sesuai kata-katanya. Kiperina adalah damage dealer yang sangat kuat dalam meta Reverse: 1999.",
       "words": "Tidak perlu banyak bicara. Tunjukkan saja hasilnya.",
@@ -5798,7 +5815,7 @@
     {
       "name": "Sentinel",
       "gender": "male",
-      "img": "images/sentinel_r1999.png",
+      "img": "images/b.png",
       "desc": "Arcanist penjaga dari Reverse: 1999 yang berdedikasi melindungi sekutu.",
       "details": "Sentinel adalah karakter playable dalam game Reverse: 1999 oleh Bluepoch. Sesuai namanya, ia adalah penjaga — seorang Arcanist yang mengutamakan perlindungan tim di atas segalanya. Ia adalah defender/support yang sangat loyal dan tidak pernah meninggalkan posnya. Kepribadiannya tenang, setia, dan penuh tanggung jawab terhadap mereka yang ia lindungi.",
       "words": "Tidak ada yang akan lewat selama aku berjaga.",
@@ -5815,7 +5832,7 @@
     {
       "name": "Paper Heron",
       "gender": "female",
-      "img": "images/paperheron_r1999.png",
+      "img": "images/c.png",
       "desc": "Arcanist origami bangau dari Reverse: 1999 dengan kekuatan seni kertas.",
       "details": "Paper Heron adalah karakter playable dalam game Reverse: 1999 oleh Bluepoch. Namanya terinspirasi dari bangau kertas origami — simbol keberuntungan dan harapan dalam budaya Asia Timur. Ia adalah Arcanist yang menggunakan kekuatan seni lipat kertas (origami) sebagai senjata, menghidupkan kreasi-kreasi kertasnya untuk bertarung. Kepribadiannya lembut, artistik, dan penuh kedamaian seperti bangau yang ia representasikan.",
       "words": "Setiap lipatan kertas menyimpan harapan yang terlipat di dalamnya.",
@@ -5832,7 +5849,7 @@
     {
       "name": "Flutterpage",
       "gender": "female",
-      "img": "images/flutterpage_r1999.png",
+      "img": "images/d.png",
       "desc": "Arcanist kupu-kupu halaman dari Reverse: 1999 yang ringan dan misterius.",
       "details": "Flutterpage adalah karakter playable dalam game Reverse: 1999 oleh Bluepoch. Namanya menggabungkan 'flutter' (kepakan sayap kupu-kupu) dan 'page' (halaman buku), mencerminkan tema yang menggabungkan keindahan alam dengan literatur. Ia adalah Arcanist yang bergerak dengan ringan dan elegan, seperti kupu-kupu yang berpindah dari satu bunga ke bunga lain. Kepribadiannya pemalu, penasaran, dan suka menjelajahi hal-hal baru.",
       "words": "Dunia ini terlalu indah untuk hanya dilihat dari satu sudut saja.",
@@ -5849,7 +5866,7 @@
     {
       "name": "Marcus",
       "gender": "male",
-      "img": "images/marcus_r1999.png",
+      "img": "images/e.png",
       "desc": "Arcanist dengan nama klasik Romawi dari Reverse: 1999, pejuang yang teguh.",
       "details": "Marcus adalah karakter playable dalam game Reverse: 1999 oleh Bluepoch. Namanya terinspirasi dari nama Romawi klasik, mencerminkan karakter yang kuat dan teguh seperti prajurit Romawi kuno. Ia adalah Arcanist yang mengutamakan kekuatan fisik dan ketahanan dalam pertempuran. Kepribadiannya serius, disiplin, dan sangat berkomitmen pada tugasnya — tidak pernah mengambil jalan pintas.",
       "words": "Disiplin adalah yang membedakan pejuang dari pengecut.",
@@ -5866,7 +5883,7 @@
     {
       "name": "Brume",
       "gender": "female",
-      "img": "images/brume_r1999.png",
+      "img": "images/f.png",
       "desc": "Arcanist kabut misterius dari Reverse: 1999.",
       "details": "Brume adalah karakter playable dalam game Reverse: 1999 oleh Bluepoch. Namanya berarti 'kabut' dalam bahasa Prancis, mencerminkan kepribadiannya yang misterius dan sulit dipahami seperti kabut tipis yang menutupi pemandangan. Ia adalah Arcanist yang menggunakan ilusi dan manipulasi penglihatan sebagai kekuatannya. Kepribadiannya dingin, ambigu, dan selalu tampak menyembunyikan sesuatu di balik penampilannya yang tenang.",
       "words": "Yang tidak bisa kau lihat dengan jelas justru paling berbahaya.",
@@ -5883,7 +5900,7 @@
     {
       "name": "Hoshino",
       "gender": "female",
-      "img": "images/hoshino_ba.png",
+      "img": "images/g.png",
       "desc": "Ketua Abydos High School di Blue Archive yang malas namun sangat kuat.",
       "details": "Hoshino Ai adalah karakter playable dalam game Blue Archive oleh Nexon. Ia adalah ketua (senpai tertua) dari Abydos High School — sekolah yang hampir bangkrut dan hampir tidak punya murid lagi. Hoshino menggunakan senjata besar dan mengikuti role sebagai Tank/Attacker. Kepribadiannya sangat malas dan suka tidur — ia selalu mencari alasan untuk tidak bekerja dan sering bermalas-malasan. Namun saat situasi darurat tiba, ia bisa menjadi salah satu pejuang paling tangguh yang ada. Ia sangat menyayangi junior-juniornya di Abydos meski jarang menunjukkannya secara langsung. Hoshino adalah salah satu karakter paling ikonik dan disukai dalam Blue Archive.",
       "words": "Senpai mau istirahat dulu... main sendiri ya.",
@@ -5900,7 +5917,7 @@
     {
       "name": "Hiiro Kagami",
       "gender": "female",
-      "img": "images/hiiro_kagami.png",
+      "img": "images/h.png",
       "desc": "Anggota MORE MORE JUMP! di Project Sekai yang sangat populer dan percaya diri.",
       "details": "Kagami Hiiro adalah karakter dari game rhythm Project SEKAI: Colorful Stage! feat. Hatsune Miku oleh SEGA dan Colorful Palette. Ia adalah anggota dari grup idol MORE MORE JUMP! Hiiro adalah anak dari keluarga artis terkenal dan tumbuh di bawah sorotan publik sejak kecil. Kepribadiannya sangat percaya diri, elegan, dan selalu tampil sempurna di depan publik. Namun di balik citra idealnya, ia menyimpan tekanan besar untuk memenuhi ekspektasi tinggi. Ia memiliki rivalitas yang kompleks dengan anggota unit lainnya.",
       "words": "Kesempurnaan bukan tujuan — itu standar minimumku.",
@@ -5917,7 +5934,7 @@
     {
       "name": "Ena Shinonome",
       "gender": "female",
-      "img": "images/ena_shinonome.png",
+      "img": "images/i.png",
       "desc": "Seniman 25ji, Nightcord de. di Project Sekai yang eksentrik dan berbakat.",
       "details": "Shinonome Ena adalah karakter dari game Project SEKAI: Colorful Stage! feat. Hatsune Miku oleh SEGA dan Colorful Palette. Ia adalah anggota unit 25-ji, Nightcord de. — unit yang membuat musik di malam hari secara daring. Ena adalah seniman yang sangat berbakat namun juga sangat tidak stabil secara emosional. Ia memiliki hubungan kompleks dengan adiknya, Shinonome Akito dari Vivid BAD SQUAD. Kepribadiannya egois, impulsif, dan mudah cemburu, namun juga sangat bersemangat dalam hal seni dan musik. Di balik perilakunya yang sulit, ia sebenarnya peduli terhadap orang-orang di sekitarnya.",
       "words": "Karyaku akan membuktikan segalanya — tidak perlu kata-kata.",
@@ -5934,7 +5951,7 @@
     {
       "name": "Mafuyu Asahina",
       "gender": "female",
-      "img": "images/mafuyu_asahina.png",
+      "img": "images/j.png",
       "desc": "Anggota 25ji, Nightcord de. di Project Sekai yang dingin dan misterius.",
       "details": "Asahina Mafuyu adalah karakter dari game Project SEKAI: Colorful Stage! feat. Hatsune Miku oleh SEGA dan Colorful Palette. Ia adalah anggota unit 25-ji, Nightcord de. Mafuyu tampak sangat dingin, hampir tidak berekspresi, dan jarang berbicara. Ia adalah pianis berbakat yang pernah sangat terkenal namun berhenti dari dunia musik karena alasan yang misterius. Dalam unit Nightcord, ia adalah 'musuh dari kehidupan' — orang yang menciptakan musik karena ingin mengekspresikan keinginan untuk lenyap dari dunia. Character arc-nya adalah salah satu yang paling emosional dalam Project Sekai.",
       "words": "...(diam)",
@@ -5951,7 +5968,7 @@
     {
       "name": "Kanade Yoisaki",
       "gender": "female",
-      "img": "images/kanade_yoisaki.png",
+      "img": "images/k.png",
       "desc": "Komposer jenius 25ji, Nightcord de. di Project Sekai yang menderita kondisi khusus.",
       "details": "Yoisaki Kanade adalah karakter dari game Project SEKAI: Colorful Stage! feat. Hatsune Miku oleh SEGA dan Colorful Palette. Ia adalah pemimpin de facto dan komposer utama dari unit 25-ji, Nightcord de. Kanade adalah jenius musik yang luar biasa — ia bisa menyelesaikan komposisi kompleks dalam waktu singkat. Namun ia menderita kondisi yang membuatnya tidak bisa berinteraksi langsung dengan orang lain tanpa kesakitan. Ia tinggal terisolasi dan berkomunikasi terutama melalui internet. Musiknya mencerminkan rasa sakit dan keindahan yang ia rasakan.",
       "words": "Musik adalah satu-satunya cara aku bisa bicara kepada dunia.",
@@ -5968,7 +5985,7 @@
     {
       "name": "Mizuki Akiyama",
       "gender": "anomali",
-      "img": "images/mizuki_akiyama.png",
+      "img": "images/ll.png",
       "desc": "Anggota MORE MORE JUMP! di Project Sekai yang femboy dan penuh semangat.",
       "details": "Akiyama Mizuki adalah karakter dari game Project SEKAI: Colorful Stage! feat. Hatsune Miku oleh SEGA dan Colorful Palette. Ia adalah anggota unit MORE MORE JUMP! yang memiliki penampilan feminin meski secara gender ambigu (tidak didefinisikan secara eksplisit dalam game). Mizuki adalah salah satu karakter pertama dalam Project Sekai yang memiliki representasi gender non-biner. Kepribadiannya sangat ceria, suka bergaya, dan selalu penuh semangat. Ia sangat menyukai fashion dan selalu tampil dengan penampilan yang memesona. Mizuki adalah salah satu karakter yang paling banyak diperbincangkan dalam komunitas game karena desain dan arc ceritanya yang unik.",
       "words": "Cantik atau tampan? Kenapa pilih satu kalau bisa dua-duanya?",
@@ -5985,7 +6002,7 @@
     {
       "name": "Jaehwan",
       "gender": "male",
-      "img": "images/jaehwan.png",
+      "img": "images/m.png",
       "desc": "Kim Jaehwan, penyanyi berbakat dengan suara yang luar biasa dari The Novel's Extra.",
       "details": "Kim Jaehwan adalah karakter dari novel web Korea 'The Novel's Extra' (소설 속 엑스트라). Ia adalah karakter penyanyi berbakat yang memiliki suara luar biasa indah — suaranya bisa memengaruhi emosi pendengar secara mendalam. Dalam cerita, ia awalnya adalah karakter figuran yang tidak penting, namun kisahnya berkembang menjadi salah satu yang paling berkesan. Kepribadiannya hangat, berdedikasi, dan sangat passionate terhadap musik.",
       "words": "Suaraku bukan hanya suara — itu adalah jiwaku yang bernyanyi.",
@@ -6002,7 +6019,7 @@
     {
       "name": "Otto Apocalypse",
       "gender": "male",
-      "img": "images/otto_apocalypse.png",
+      "img": "images/n.png",
       "desc": "Overseer of Schicksal di Honkai Impact 3rd yang terobsesi menghidupkan kembali kekasihnya.",
       "details": "Otto Apocalypse adalah karakter dari game Honkai Impact 3rd oleh HoYoverse. Ia adalah Overseer (pemimpin tertinggi) dari Schicksal — organisasi yang memerangi Honkai. Otto adalah jenius yang sudah hidup selama berabad-abad melalui berbagai cara. Seluruh hidupnya dihabiskan dengan obsesi tunggal: menghidupkan kembali Kallen Kaslana, wanita yang ia cintai yang meninggal ratusan tahun lalu. Untuk mencapai tujuan ini, ia rela melakukan hal-hal kejam dan amoral. Otto adalah antagonis kompleks yang memiliki motivasi yang bisa dipahami meski metodenya tidak bisa dibenarkan.",
       "words": "Tidak ada pengorbanan yang terlalu besar demi mengembalikanmu, Kallen.",
@@ -6019,7 +6036,7 @@
     {
       "name": "Void Archives",
       "gender": "anomali",
-      "img": "images/void_archives.png",
+      "img": "images/o.png",
       "desc": "AI misterius penjaga pengetahuan Schicksal di Honkai Impact 3rd.",
       "details": "Void Archives adalah karakter/entitas dari game Honkai Impact 3rd oleh HoYoverse. Ia adalah AI kuno yang menjaga arsip pengetahuan Schicksal. Void Archives bukan manusia dan tidak memiliki gender konvensional. Ia menyimpan pengetahuan tentang sejarah Honkai yang panjang dan menjadi sumber informasi penting dalam lore game. Kepribadiannya sangat dingin, transaksional, dan memandang segala sesuatu dari sudut pandang data dan efisiensi semata.",
       "words": "Data telah diarsipkan. Informasi tersedia untuk diakses.",
@@ -6036,7 +6053,7 @@
     {
       "name": "Sirin",
       "gender": "female",
-      "img": "images/sirin.png",
+      "img": "images/p.png",
       "desc": "Herrscher of the Void kecil yang tragis dari Honkai Impact 3rd.",
       "details": "Sirin adalah karakter dari game Honkai Impact 3rd oleh HoYoverse. Ia adalah gadis kecil yang menjadi Herrscher of the Void generasi sebelum Kiana. Sirin awalnya adalah seorang yatim piatu yang diperlakukan sebagai subjek percobaan oleh Schicksal. Setelah mengalami pengkhianatan dan kekejaman berulang kali, ia akhirnya menerima kekuatan Honkai dan menjadi Herrscher yang sangat destruktif. Tragedi Sirin adalah salah satu kisah paling menyedihkan dalam lore Honkai Impact 3rd — seorang anak yang seharusnya diselamatkan justru dijadikan senjata.",
       "words": "Kalian... mengkhianatiku. Kalian semua akan membayarnya.",
@@ -6053,7 +6070,7 @@
     {
       "name": "Kumiko Oumae",
       "gender": "female",
-      "img": "images/kumiko_oumae.png",
+      "img": "images/q.png",
       "desc": "Pemain eufoni dari Sound! Euphonium yang jujur dan penuh observasi tajam.",
       "details": "Oumae Kumiko adalah protagonis dari anime dan novel Sound! Euphonium (Hibike! Euphonium) karya Ayano Takeda. Ia adalah siswi SMA yang bermain eufoni (euphonium) di klub musik tiup sekolahnya, Kitauji High School. Kumiko memiliki kemampuan observasi yang sangat tajam dan sering memikirkan hal-hal yang tidak ia ucapkan secara langsung. Ia keras kepala tentang pilihan-pilihannya sendiri namun tumbuh menjadi pribadi yang lebih berani dan jujur seiring waktu. Hubungannya dengan Reina Kousaka adalah inti emosional dari series ini.",
       "words": "Aku tidak tahu harus bilang apa, tapi... aku senang bisa bermain bersama kalian.",
@@ -6070,7 +6087,7 @@
     {
       "name": "Hikigaya Hachiman",
       "gender": "male",
-      "img": "images/hikigaya_hachiman.png",
+      "img": "images/r.png",
       "desc": "Loner sinis dari My Teen Romantic Comedy SNAFU dengan perspektif yang unik.",
       "details": "Hikigaya Hachiman adalah protagonis dari anime dan light novel Yahari Ore no Seishun Love Comedy wa Machigatteiru (My Teen Romantic Comedy SNAFU) karya Wataru Watari. Ia adalah siswa SMA yang sangat sinis dan pesimistis terhadap konsep 'pemuda' dan hubungan sosial. Hachiman memiliki pandangan yang sangat realistis (atau nihilistis) tentang dunia dan orang-orang di sekitarnya. Ia dipaksa bergabung dengan Service Club dan bertemu Yukino Yukinoshita dan Yui Yuigahama yang perlahan mengubah perspektifnya. Ia adalah salah satu karakter paling kompleks dan disukai dalam genre romcom.",
       "words": "Masa muda? Itu hanya kebohongan yang kita ceritakan kepada diri sendiri.",
@@ -6087,7 +6104,7 @@
     {
       "name": "Ichikawa Kyoutarou",
       "gender": "male",
-      "img": "images/ichikawa_kyoutarou.png",
+      "img": "images/s.png",
       "desc": "Protagonis pemalu The Dangers in My Heart yang diam-diam menyukai Yamada.",
       "details": "Ichikawa Kyoutarou adalah protagonis dari anime dan manga The Dangers in My Heart (Boku no Kokoro no Yabai Yatsu) karya Norio Sakurai. Ia adalah siswa SMP yang gelap dan penyendiri, sering berimajinasi hal-hal negatif namun sebenarnya sangat pemalu dan baik hati. Ichikawa secara tidak sadar mulai menyukai Yamada Anna — gadis paling populer di sekolah — dan interaksi mereka membentuk inti cerita. Ia adalah contoh klasik karakter yang terlihat gelap di luar namun memiliki hati yang sangat hangat di dalam.",
       "words": "K-kenapa dia terus ngajak ngobrol aku... ini bukan rencana yang ada dalam skripku.",
@@ -6104,7 +6121,7 @@
     {
       "name": "Yamada Anna",
       "gender": "female",
-      "img": "images/yamada_anna.png",
+      "img": "images/t.png",
       "desc": "Model populer dari The Dangers in My Heart yang jatuh hati pada Ichikawa.",
       "details": "Yamada Anna adalah karakter dari anime dan manga The Dangers in My Heart (Boku no Kokoro no Yabai Yatsu) karya Norio Sakurai. Ia adalah gadis paling populer di sekolah — model yang tampil di majalah — namun secara tak terduga sangat awkward dalam situasi sosial sehari-hari. Yamada sangat menyukai makanan dan sering makan banyak secara diam-diam. Perlahan-lahan ia jatuh hati pada Ichikawa yang tidak seperti orang lain. Yamada adalah salah satu karakter romcom paling disukai karena kepribadiannya yang menggemaskan dan genuine.",
       "words": "Ichikawa-kun itu aneh... tapi aneh yang bikin penasaran.",
@@ -6121,7 +6138,7 @@
     {
       "name": "Fumiya Tomozaki",
       "gender": "male",
-      "img": "images/fumiya_tomozaki.png",
+      "img": "images/u.png",
       "desc": "Gamer terbaik Jepang dari Bottom-tier Character Tomozaki yang belajar tentang kehidupan.",
       "details": "Tomozaki Fumiya adalah protagonis dari anime dan light novel Bottom-tier Character Tomozaki (Jaku-Chara Tomozaki-kun) karya Yuki Yaku. Ia adalah gamer top Jepang dalam game fighting Atafami, namun dalam kehidupan nyata ia sangat tidak bisa bersosialisasi dan rendah diri. Setelah bertemu Aoi Hinami — siswi paling populer di sekolah yang ternyata juga gamer — ia mulai 'belajar' cara menjalani kehidupan sosial seperti bermain game dengan strategi. Perjalanannya adalah tentang menemukan dirinya sendiri, bukan hanya mengikuti instruksi orang lain.",
       "words": "Kalau kehidupan adalah game, aku harus bisa menguasainya juga.",
@@ -6138,7 +6155,7 @@
     {
       "name": "Yatora Yaguchi",
       "gender": "male",
-      "img": "images/yatora_yaguchi.png",
+      "img": "images/v.png",
       "desc": "Pelajar brilian dari Blue Period yang menemukan passion dalam seni lukis.",
       "details": "Yaguchi Yatora adalah protagonis dari anime dan manga Blue Period karya Tsubasa Yamaguchi. Ia adalah siswa SMA yang sangat berprestasi secara akademis namun merasa hidupnya hampa dan tidak bermakna. Semuanya berubah ketika ia melihat sebuah lukisan yang menyentuh hatinya dan memutuskan untuk mengejar seni sebagai passionnya. Yatora kemudian berjuang keras untuk masuk Tokyo University of the Arts — universitas seni paling kompetitif di Jepang. Perjalanannya adalah tentang menemukan diri sendiri melalui seni.",
       "words": "Ini pertama kalinya aku merasakan sesuatu yang benar-benar ingin kulakukan.",
@@ -6155,7 +6172,7 @@
     {
       "name": "Isagi Yoichi",
       "gender": "male",
-      "img": "images/isagi_yoichi.png",
+      "img": "images/w.png",
       "desc": "Striker Blue Lock yang berevolusi melalui 'ego' dan spatial awareness.",
       "details": "Isagi Yoichi adalah protagonis dari manga dan anime Blue Lock karya Muneyuki Kaneshiro. Ia adalah pemain sepak bola yang bergabung dengan program Blue Lock — program seleksi ekstrem untuk menciptakan striker egois terbaik di dunia. Isagi memiliki kemampuan spatial awareness yang luar biasa — ia bisa 'membaca' seluruh lapangan dengan sempurna. Sepanjang cerita, ia terus berevolusi dengan mengembangkan 'ego' yang semakin kuat. Ia adalah karakter yang tenang namun memiliki tekad yang sangat besar untuk menjadi striker terbaik.",
       "words": "Aku akan mencuri semua yang kumiliki dari orang-orang terkuat di sini.",
@@ -6172,7 +6189,7 @@
     {
       "name": "Michael Kaiser",
       "gender": "male",
-      "img": "images/michael_kaiser.png",
+      "img": "images/x.png",
       "desc": "Striker genius asal Jerman di Blue Lock dengan ego yang sangat kuat.",
       "details": "Michael Kaiser adalah karakter dari manga dan anime Blue Lock karya Muneyuki Kaneshiro. Ia adalah striker dari Jerman yang dianggap sebagai salah satu pemain muda terbaik di dunia. Kaiser memiliki ego yang sangat kuat dan cara bermain yang indah namun sangat kejam — ia tidak peduli dengan siapa pun kecuali ekspresi dirinya sendiri di lapangan. Ia memiliki hubungan kompleks dengan Ness, asisten setianya. Kaiser adalah salah satu rival terkuat yang dihadapi Isagi.",
       "words": "Sepak bolaku adalah seni. Kamu hanya bisa menonton dan terkagum-kagum.",
@@ -6189,7 +6206,7 @@
     {
       "name": "Ego Jinpachi",
       "gender": "male",
-      "img": "images/ego_jinpachi.png",
+      "img": "images/y.png",
       "desc": "Pelatih Blue Lock yang eksentrik dan visioner dengan filosofi 'ego'.",
       "details": "Ego Jinpachi adalah karakter dari manga dan anime Blue Lock karya Muneyuki Kaneshiro. Ia adalah pelatih dan arsitek di balik program Blue Lock — program revolusioner yang ingin menciptakan striker egois terbaik dunia untuk membawa Jepang menang di Piala Dunia. Ego adalah tokoh yang sangat eksentrik, sarkastik, dan provokator — ia sengaja menciptakan situasi ekstrem untuk mendorong pemain menemukan 'ego' mereka. Filosofinya kontroversial namun ternyata efektif.",
       "words": "Kalian adalah junk yang perlu dihancurkan dan dibentuk ulang menjadi berlian.",
@@ -6206,7 +6223,7 @@
     {
       "name": "Meguru Bachira",
       "gender": "male",
-      "img": "images/meguru_bachira.png",
+      "img": "images/z.png",
       "desc": "Dribbler jenius Blue Lock yang bermain mengikuti 'monster dalam dirinya'.",
       "details": "Bachira Meguru adalah karakter dari manga dan anime Blue Lock karya Muneyuki Kaneshiro. Ia adalah pemain Blue Lock dengan kemampuan dribbling yang sangat unik dan tidak bisa diprediksi — seperti monster yang menari di lapangan. Bachira bermain mengikuti intuisi dan 'monster' dalam dirinya yang mendorongnya untuk terus bergerak bebas. Ia adalah teman dekat Isagi dan memiliki kepribadian yang sangat ceria, playful, dan bebas. Ia sangat menikmati sepak bola sebagai sebuah permainan yang menyenangkan.",
       "words": "Monster dalam diriku bilang ini akan seru banget!",
@@ -6223,7 +6240,7 @@
     {
       "name": "Rensuke Kunigami",
       "gender": "male",
-      "img": "images/rensuke_kunigami.png",
+      "img": "images/aa.png",
       "desc": "Striker bertenaga dari Blue Lock dengan tembakan kuat dan cita-cita mulia.",
       "details": "Kunigami Rensuke adalah karakter dari manga dan anime Blue Lock karya Muneyuki Kaneshiro. Ia adalah pemain Blue Lock dengan tembakan paling keras dan kuat. Kunigami bermain sepak bola bukan untuk ego atau ketenaran, melainkan karena ingin menjadi pahlawan bagi banyak orang — seperti tokoh anime yang ia idolakan. Filosofinya bertentangan dengan konsep 'ego' Blue Lock yang individualistis. Character arc-nya adalah salah satu yang paling dramatis dan mengejutkan dalam series.",
       "words": "Aku bermain bukan untuk diriku sendiri, tapi untuk menjadi cahaya bagi orang lain.",
@@ -6240,7 +6257,7 @@
     {
       "name": "Reo Mikage",
       "gender": "male",
-      "img": "images/reo_mikage.png",
+      "img": "images/ab.png",
       "desc": "Pemain Blue Lock dari keluarga kaya yang mengejar 'sepak bola bersama Nagi'.",
       "details": "Mikage Reo adalah karakter dari manga dan anime Blue Lock karya Muneyuki Kaneshiro. Ia adalah anak dari keluarga super kaya yang memiliki talenta luar biasa dalam berbagai bidang. Reo menemukan arti hidupnya saat bertemu Nagi Seishiro dan bertekad untuk bermain sepak bola bersama Nagi selamanya. Ia memiliki kemampuan untuk meniru gaya bermain siapa pun dan sangat versatile. Reo adalah salah satu pemain yang paling obsesif dengan partnernya di Blue Lock.",
       "words": "Aku tidak butuh apa pun selain bermain sepak bola bersamamu, Nagi.",
@@ -6257,7 +6274,7 @@
     {
       "name": "Kousei Arima",
       "gender": "male",
-      "img": "images/kousei_arima.png",
+      "img": "images/ac.png",
       "desc": "Pianis jenius dari Your Lie in April yang kehilangan kemampuannya mendengar nada.",
       "details": "Arima Kousei adalah protagonis dari anime dan manga Your Lie in April (Shigatsu wa Kimi no Uso) karya Naoshi Arakawa. Ia adalah pianis jenius yang dijuluki 'Human Metronome' karena kemampuannya memainkan piano dengan presisi sempurna. Setelah ibunya meninggal, ia kehilangan kemampuan untuk mendengar nada pianonya sendiri secara misterius. Segalanya berubah saat ia bertemu Miyazono Kaori, seorang pemain biola yang memainkan musik dengan penuh emosi dan membebaskan. Perjalanan Kousei adalah tentang menemukan kembali keindahan musik setelah lama terjebak dalam kesedihan.",
       "words": "Aku tidak bisa mendengar nada pianonya... tapi saat kamu ada di sana, aku bisa bermain lagi.",
@@ -6274,7 +6291,7 @@
     {
       "name": "Kim Dokja",
       "gender": "male",
-      "img": "images/kim_dokja.png",
+      "img": "images/ad.png",
       "desc": "Pembaca setia dari Omniscient Reader's Viewpoint yang masuk ke dalam novel yang ia baca.",
       "details": "Kim Dokja adalah protagonis dari novel web dan manhwa Omniscient Reader's Viewpoint (Tokebi) karya sing N song (필명). Ia adalah satu-satunya pembaca novel web '3 Ways to Survive in a Ruined World' dari awal hingga tamat. Ketika dunia berubah menjadi seperti novel yang ia baca, Kim Dokja adalah satu-satunya orang yang tahu alur cerita selanjutnya. Ia menggunakan pengetahuannya sebagai 'pembaca' untuk bertahan hidup dan membantu orang lain. Kepribadiannya sangat kompleks — di luar ia tampak dingin dan kalkulatif, namun sebenarnya sangat peduli dan bersedia berkorban habis-habisan untuk orang-orang yang ia pedulikan.",
       "words": "Aku hanya pembaca... tapi mungkin pembaca juga bisa mengubah ceritanya.",
